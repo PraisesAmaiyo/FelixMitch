@@ -1,0 +1,137 @@
+// COLOR VARIABLES
+$color-primary: #ec1a23;
+$color-primary-light: #ec1a23;
+$color-primary-light-1: #ebfbee;
+$color-secondary-light: #F89942;
+$color-secondary-dark: #205329;
+
+$color-grey-light-1: #fff;
+$color-grey-light-2: #eff0ef;
+$color-grey-light-3: #b2bdc6;
+
+$color-grey-dark-1: #000;
+$color-grey-dark-2: #2A2F35;
+$color-grey-dark-3: #6FC1CC;
+
+$color-primary-50: #fff3ed;
+$color-primary-100: #ffe3d5;
+$color-primary-200: #fec3aa;
+$color-primary-300: #fe9973;
+$color-primary-400: #fc653c;
+$color-primary-500: #fa3d15;
+$color-primary-600: #eb230b;
+$color-primary-700: #c3150b;
+$color-primary-800: #9b1311;
+$color-primary-900: #7d1311;
+$color-primary-950: #430708;
+
+$color-secondary-50: #f2f7fd;
+$color-secondary-100: #e3eefb;
+$color-secondary-200: #c1ddf6;
+$color-secondary-300: #8bc0ee;
+$color-secondary-400: #4da0e3;
+$color-secondary-500: #2684d1;
+$color-secondary-600: #1868b1;
+$color-secondary-700: #16599a;
+$color-secondary-800: #154777;
+$color-secondary-900: #173d63;
+$color-secondary-950: #0f2742;
+
+
+// #D1D1D1
+// #114B5F
+
+
+// 'outrageous-orange': {
+//    '50': '#fff3ed',
+//       '100': '#ffe3d5',
+//       '200': '#fec3aa',
+//       '300': '#fe9973',
+//       '400': '#fc653c',
+//       '500': '#fa3d15',
+//       '600': '#eb230b',
+//       '700': '#c3150b',
+//       '800': '#9b1311',
+//       '900': '#7d1311',
+//       '950': '#430708',
+// }
+
+
+// FONT VARIABLES
+$font-primary: "Montserrat", sans-serif;
+
+// RESPONSIVE VARIABLES
+
+$bp-monitor: 100em;
+$bp-largest: 75em;
+$bp-larger: 62.5em;
+$bp-big: 50.3em;
+$bp-large: 45.7em;
+$bp-largeDns: 43.3em;
+$bp-medium: 38.6em;
+$bp-mid: 35.6em;
+$bp-small: 30.5em;
+$bp-small-extra: 25.5em;
+$bp-smaller: 18.8em;
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+
+   @media only screen and (max-width:$bp-small-extra) {
+      font-size: 50%;
+   }
+}
+
+body {
+   font-family: $font-primary;
+   background-color: $color-grey-light-1;
+   font-weight: 300;
+   line-height: 1.4;
+   position: relative;
+   // overflow-x: hidden;
+
+   a {
+      color: $color-primary-600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+         color: #0056b3;
+         text-decoration: underline;
+      }
+
+      &:active {
+         color: #003d80;
+      }
+
+      &:visited {
+         color: #0056b3;
+      }
+
+      &:focus {
+         outline-offset: 2px;
+      }
+   }
+}
+
+::-webkit-scrollbar {
+   width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 1rem;
+   background-color: $color-primary-800;
+}
+
+::-webkit-scrollbar-track {
+   background-color: $color-primary-100;
+}

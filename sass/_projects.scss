@@ -1,0 +1,430 @@
+body.home {
+   overflow-x: hidden;
+
+   .home-container {
+
+      .projects-hero {
+         padding: 10rem 3rem;
+         background-color: #2a2f35;
+         background-repeat: no-repeat;
+         height: max-content;
+         position: relative;
+
+         .projects-background {
+            background-image: url(../img/projects/projects-bg.jpeg);
+            background-position: 50% 80%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+         }
+
+         &_container {
+            width: 100%;
+            height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .hero-text {
+               position: relative;
+               z-index: 1;
+               padding: 3rem 0;
+               color: $color-grey-light-1;
+               margin-top: 3rem;
+               margin-bottom: 2rem;
+
+               .heading-text {
+                  font-size: 6rem;
+                  margin-bottom: 1.5rem;
+               }
+
+
+            }
+         }
+
+         .hero-aside {
+            font-size: 11rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: -13rem;
+            right: 0;
+            opacity: 0.5;
+         }
+
+         .line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4rem;
+            color: red;
+            background-color: $color-secondary-50;
+            width: 100%;
+            z-index: 100;
+         }
+      }
+
+      .project-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+         gap: 2.5rem;
+         padding: 1rem;
+
+         .project-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: $color-grey-dark-1;
+
+            &:hover {
+               transform: scale(1.03);
+               box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .project-image {
+               width: 100%;
+               height: 25rem;
+               object-fit: cover;
+               transition: transform 0.4s ease;
+            }
+
+            &:hover .project-image {
+               transform: scale(1.05) rotate(-2deg);
+            }
+
+            .project-details {
+               padding: 2rem;
+               background: $color-grey-light-1;
+
+               .heading-subtext {
+                  font-weight: 600;
+               }
+
+               .heading-subtext,
+               .heading-minitext {
+                  margin-bottom: 1.5rem;
+               }
+            }
+
+         }
+      }
+
+      .section-project_values {
+         padding: 8rem 3rem;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         color: $color-primary-950;
+         color: $color-grey-light-1;
+         background-color: #010101;
+
+         .background-overlay {
+            background-image: url(../img/projects/projects-overlay.jpeg);
+            background-attachment: fixed;
+            background-position: 40% 45%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            transition: background .4s;
+
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+
+         .project-values {
+            padding: 0 3rem;
+            width: 75%;
+            margin: 0 auto;
+            height: 100%;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+
+            @media only screen and (min-width: $bp-monitor) {
+               max-width: 160rem;
+               width: 75%;
+            }
+
+            .tag {
+               color: $color-grey-light-1;
+            }
+
+            .heading-midtext {
+               margin-bottom: 3rem;
+            }
+
+            .heading-minitext {
+               margin-bottom: 2rem;
+            }
+         }
+      }
+
+
+      // Single Projects
+
+      .single-project-hero {
+         padding: 10rem 3rem;
+         background-color: #2a2f35;
+         background-repeat: no-repeat;
+         height: max-content;
+         position: relative;
+
+         .single-project-background {
+            background-image: url(../img/projects/pipeline/pipeline-bg.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+         }
+
+         &_container {
+            width: 100%;
+            height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+            text-align: center;
+
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .hero-text {
+               position: relative;
+               z-index: 1;
+               padding: 3rem 0;
+               color: $color-grey-light-1;
+               margin-top: 3rem;
+               margin-bottom: 2rem;
+
+               .heading-text {
+                  font-size: 6rem;
+                  margin-bottom: 1.5rem;
+               }
+
+               .tag {
+                  color: $color-grey-light-1;
+               }
+
+
+            }
+         }
+
+         .hero-aside {
+            font-size: 11rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: -12rem;
+            right: 0;
+            opacity: 0.5;
+         }
+
+         // .line {
+         //    position: absolute;
+         //    bottom: 0;
+         //    left: 0;
+         //    height: 4rem;
+         //    background-color: $color-secondary-50;
+         //    width: 100%;
+         //    z-index: 100;
+         // }
+      }
+
+
+
+      .visual-section {
+         // marg
+      }
+
+      .overview-section.project,
+      .visual-section.project,
+      .benefits-section.project {
+         padding: 3rem 3rem 2rem 3rem;
+         width: 100%;
+         margin: 0 auto;
+
+         .overview-section_top {
+            display: flex;
+            gap: 3rem;
+            text-align: left;
+            padding-top: 5rem !important;
+
+            .overview-section_left {
+               width: 25%;
+            }
+
+            .overview-section_right {
+               width: 70%;
+            }
+         }
+
+         .overview-section_bottom {
+            display: flex;
+            text-align: left;
+            gap: 3rem;
+            margin-top: 4rem;
+         }
+
+         .heading-subtext {
+            font-weight: 600;
+         }
+
+
+         @media only screen and (min-width: $bp-monitor) {
+            width: 160rem;
+         }
+
+         .heading-midtext {
+            margin-bottom: 2rem;
+         }
+
+         .heading-minitext {
+            font-size: 1.3rem;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1.5rem;
+         }
+      }
+
+      .visual-section .visual-images {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 2rem;
+         padding: 2rem 0;
+
+         .image-container {
+
+            .image-box {
+               position: relative;
+               height: 40rem;
+               overflow: hidden;
+            }
+
+            .visual-img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               object-position: 50% 20%;
+               border-radius: 0.5rem;
+            }
+
+            .heading-minitext {
+               font-size: 1.5rem;
+               margin-top: 1rem;
+            }
+         }
+      }
+
+      .double-column-section {
+         padding: 3rem 3rem 2rem 3rem;
+
+         .heading-subtext {
+            font-weight: 600;
+            width: 40%;
+            margin-bottom: 1.5rem;
+         }
+
+         .double-column {
+            // Set the columns
+            column-count: 2;
+            column-gap: 2rem;
+            // padding: 1rem;
+            color: $color-grey-dark-1;
+
+
+            .heading-minitext {
+
+               margin-bottom: 1rem;
+               break-inside: avoid; // Prevents breaking paragraphs across columns
+            }
+         }
+
+         // Responsive adjustments
+         @media screen and (max-width: 768px) {
+            .double-column {
+               column-count: 1; // Switch to a single column on smaller screens
+            }
+         }
+      }
+
+
+      .benefits-section {
+         padding: 5rem 2rem;
+
+         .benefits-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 0 auto;
+            width: 90%;
+            padding: 2rem 0;
+
+
+            .benefit-item {
+               background-color: $color-grey-light-2;
+               padding: 2rem;
+               border-radius: 0.8rem;
+               display: flex;
+               align-items: center;
+               gap: 2rem;
+
+
+               .benefit-icon {
+                  font-size: 3rem;
+                  color: $color-primary-500;
+               }
+
+               .benefit-text {
+                  text-align: left;
+
+                  .heading-subtext {
+                     font-weight: 600;
+                  }
+               }
+            }
+         }
+      }
+
+      @media (max-width: 768px) {
+
+         .visual-section .visual-images,
+         .benefits-list {
+            grid-template-columns: 1fr;
+         }
+
+         .benefit-item {
+            flex-direction: column;
+            align-items: flex-start;
+         }
+      }
+
+
+
+
+
+   }
+}

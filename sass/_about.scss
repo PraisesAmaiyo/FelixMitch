@@ -1,0 +1,322 @@
+body.home {
+   overflow-x: hidden;
+
+   .home-container {
+
+      // Some ss are in the services.scss file
+
+      .about-page-hero {
+         .about-page-background {
+            background-image: url(../img/about-us/about-hero.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+         }
+      }
+
+      .about-page-stats {
+         // some Css comes from the service.scss page.
+
+
+         background-image: url(../img/about-bg.jpg) !important;
+         background-position: center !important;
+         background-repeat: no-repeat !important;
+         background-size: cover !important;
+
+         .container-left {
+            display: block !important;
+         }
+
+         .company-feature-card_container {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 1.5rem;
+
+            .company-feature-card {
+               background-color: $color-grey-light-1;
+               box-shadow: 12px 23px 29px 0 rgba(0, 0, 0, .15);
+               padding: 1.5rem;
+               border-radius: 5px;
+
+
+               .stats {
+                  display: flex;
+                  align-items: center;
+                  gap: 2rem;
+                  padding-bottom: 5rem;
+                  border-bottom: 1px solid $color-grey-dark-2;
+
+                  &-icon {
+                     font-size: 3.5rem;
+                     color: $color-primary-500;
+                  }
+
+                  &-text {
+                     display: flex;
+                     flex-direction: column;
+
+                     &_number {
+                        font-size: 4rem;
+                        font-weight: 700;
+                        display: flex;
+                        gap: .2rem;
+
+                        span {
+                           font-size: 1.5rem;
+                        }
+                     }
+
+                     p.heading-minitext {
+                        margin-top: 0;
+                        padding: 0;
+                        font-weight: 600;
+                     }
+                  }
+               }
+
+               .heading-minitext {
+                  padding-top: 1.5rem;
+                  font-size: 1.3rem;
+                  // margin-top: 4rem;
+
+               }
+            }
+
+         }
+      }
+
+      .section-core-values {
+         background-image: url(../img/about-us/about-bg-1.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+
+         padding: 8rem 3rem;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         color: $color-grey-light-1;
+
+         .core-values {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            height: 100%;
+            z-index: 1;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            &-top {
+               width: 50%;
+
+               .tag {
+                  color: $color-grey-light-1;
+               }
+
+               .core-values-brands {
+                  overflow: hidden;
+                  // display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  padding: 2rem 0;
+               }
+
+               .swiper {
+                  width: 100%;
+                  height: 20rem;
+                  margin-left: auto;
+                  margin-right: auto;
+               }
+
+               .swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  height: 100px;
+
+                  width: 32%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  cursor: grab;
+
+                  &:active {
+                     cursor: grabbing;
+                  }
+               }
+
+               .brand-logo {
+                  width: 20rem;
+                  object-fit: contain;
+                  height: 6rem;
+                  // filter: grayscale(10);
+
+                  .big {
+                     height: 10rem;
+                  }
+               }
+            }
+
+            &-bottom {
+
+               display: flex;
+               flex-direction: column;
+               gap: 3rem;
+               padding: 2rem 0;
+               width: 100%;
+               align-items: start;
+
+               &_container {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+                  gap: 3rem;
+               }
+
+               .core-values-statement {
+                  display: flex;
+                  gap: 3rem;
+                  padding-bottom: 2.5rem;
+
+                  &.border-bottom {
+
+                     border-bottom: 1px solid rgba($color-grey-light-3, .3);
+                  }
+
+                  &-icon {
+                     // color: $color-primary-500;
+                     // fill: $color-primary-500;
+                     font-size: 4rem;
+                     border-radius: 50px;
+                  }
+
+                  &-text {
+
+                     &_heading {
+                        font-weight: 700;
+                        font-size: 3rem;
+                     }
+
+                     .heading-minitext {
+                        font-size: 1.6rem;
+                        color: $color-grey-light-3;
+                     }
+                  }
+
+
+
+               }
+
+               .section-core-values-image {
+                  width: 80%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center center;
+                  border-radius: 2px 2px 2px 2px;
+                  box-shadow: 20px 20px 0px 0px $color-primary-400;
+               }
+            }
+
+         }
+      }
+
+
+      .section-experience {
+         background-image: url(../img/about-us/about-1.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         padding: 8rem 3rem;
+
+         .experience-background_overlay {
+            background-color: transparent;
+            background-image: linear-gradient(90deg, #2A2F3547 70%, $color-grey-dark-2 0%);
+            opacity: 1;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+         }
+
+         .section-experience_container {
+            padding: 0 3rem;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            z-index: 1;
+            position: relative;
+
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 1.5rem;
+
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+
+            .container-right {
+               background-color: $color-primary-500;
+               color: $color-grey-light-1;
+               z-index: 100;
+               padding: 4rem;
+
+               .tag {
+                  color: $color-grey-light-1;
+               }
+
+               .experience-list {
+                  list-style: none;
+                  padding: 0;
+                  margin: 2rem 0;
+                  display: grid;
+                  gap: 1.5rem;
+
+
+                  li {
+                     display: flex;
+                     align-items: center;
+                     gap: 1rem;
+
+                     .list-icon {
+                        background-color: $color-grey-light-1;
+                        border-radius: 50%;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                     }
+
+                     i {
+                        color: #fa3d15;
+                        font-size: 1.5rem;
+                     }
+                  }
+               }
+
+
+
+            }
+         }
+      }
+   }
+}

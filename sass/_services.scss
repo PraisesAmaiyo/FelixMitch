@@ -1,0 +1,679 @@
+body.home {
+   overflow-x: hidden;
+
+   .home-container {
+
+
+
+      .services-page-hero,
+      .about-page-hero {
+         padding: 10rem 3rem;
+         background-color: #2a2f35;
+         background-repeat: no-repeat;
+         height: max-content;
+         position: relative;
+
+         .services-page-background {
+            background-image: url(../img/services/services-page-3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+         }
+
+         &_container {
+            width: 100%;
+            height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .hero-text {
+               position: relative;
+               z-index: 1;
+               padding: 3rem 0;
+               color: $color-grey-light-1;
+               margin-top: 3rem;
+               margin-bottom: 2rem;
+
+               .heading-text {
+                  font-size: 6rem;
+                  margin-bottom: 1.5rem;
+               }
+
+
+            }
+         }
+
+         .hero-aside {
+            font-size: 11rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: -13rem;
+            right: 0;
+            opacity: 0.5;
+         }
+
+         .line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4rem;
+            color: red;
+            background-color: $color-secondary-50;
+            width: 100%;
+            z-index: 100;
+         }
+      }
+
+
+      .services-page-about,
+      .projects-about,
+      .about-page-about {
+         background-color: $color-secondary-50;
+         padding: 8rem 3rem;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         color: $color-grey-dark-1;
+
+         &_container {
+            position: relative;
+            // padding: 0 3rem;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 46% 50%;
+            gap: 4%;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: 1;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .heading-text {
+               color: $color-grey-dark-1
+            }
+
+            .container-right {
+               .about-service-image {
+                  width: 90%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center center;
+                  border-radius: 5px 5px 5px 5px;
+                  box-shadow: 20px 20px 0px 0px $color-primary-400;
+               }
+            }
+         }
+      }
+
+
+      .services-page-stats,
+      .about-page-stats {
+         background-color: $color-secondary-50;
+         background-image: url(../img/services/services-page-3.jpg);
+         background-position: top left;
+         background-repeat: no-repeat;
+         background-size: 35vw auto;
+
+
+         padding: 8rem 3rem;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         color: $color-grey-dark-1;
+
+         &_container {
+            position: relative;
+            padding: 0 3rem;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 46% 50%;
+            gap: 4%;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: 1;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .heading-text {
+               color: $color-grey-dark-1
+            }
+
+            .container-left {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               .statistics-image {
+                  width: 100%;
+                  max-width: 35rem;
+                  height: auto;
+                  display: block;
+                  object-fit: cover;
+               }
+            }
+
+            .container-right {
+
+               &__cards {
+                  height: max-content;
+
+                  .tag {
+                     margin-bottom: 1rem;
+                  }
+
+                  .stats-cards {
+                     display: grid;
+                     grid-template-rows: repeat(2, 1fr);
+                     gap: 1.5rem;
+                  }
+
+                  .feature-card_container {
+                     display: grid;
+                     grid-template-columns: repeat(2, minmax(12rem, 1fr));
+                     gap: 1.5rem;
+                  }
+
+                  .feature-card {
+                     padding: 1.2rem;
+                     display: flex;
+                     flex-direction: column;
+                     transition: all 0.3s ease;
+
+                     .stats {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+                        padding-bottom: 1rem;
+                        border-bottom: 1px solid $color-grey-dark-2;
+
+                        &-icon {
+                           font-size: 3.5rem;
+                           color: $color-primary-500;
+                        }
+
+                        &-text {
+                           display: flex;
+                           flex-direction: column;
+
+                           &_number {
+                              font-size: 3.5rem;
+                              font-weight: 700;
+                              display: flex;
+                              align-items: center;
+                              gap: .2rem;
+
+                              span {
+                                 font-size: 1.5rem;
+                              }
+                           }
+
+                           .heading-mini {
+                              font-size: 1.8rem;
+                              font-weight: 600;
+                           }
+                        }
+                     }
+
+                     .heading-minitext {
+                        padding-top: 1rem;
+
+                     }
+                  }
+               }
+
+            }
+
+         }
+      }
+
+
+
+      // Single Service Page
+
+
+      .single-service-hero {
+         padding: 10rem 3rem;
+         background-color: #2a2f35;
+         background-repeat: no-repeat;
+         height: max-content;
+         position: relative;
+
+         .single-service-background {
+            background-image: url(../img/services/oil-spill/oilspill-hero.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+         }
+
+         &_container {
+            width: 100%;
+            height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .hero-text {
+               position: relative;
+               z-index: 1;
+               padding: 3rem 0;
+               color: $color-grey-light-1;
+               margin-top: 3rem;
+               margin-bottom: 2rem;
+
+               .heading-text {
+                  font-size: 6rem;
+                  margin-bottom: 1.5rem;
+               }
+
+
+            }
+         }
+
+         .hero-aside {
+            font-size: 11rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: -12rem;
+            right: 0;
+            opacity: 0.5;
+         }
+
+         // .line {
+         //    position: absolute;
+         //    bottom: 0;
+         //    left: 0;
+         //    height: 4rem;
+         //    background-color: $color-secondary-50;
+         //    width: 100%;
+         //    z-index: 100;
+         // }
+      }
+
+      .section-features {
+         position: relative;
+         padding: 8rem 3rem;
+         height: max-content;
+         background-color: $color-grey-light-1;
+
+         @media only screen and (max-width:$bp-larger) {
+            padding: 5rem 1.5rem;
+         }
+
+         @media only screen and (max-width:$bp-medium) {
+            padding: 2rem 1.5rem 5rem 1.5rem;
+         }
+
+         &-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-image: url(../img/white-bg.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            z-index: 1;
+         }
+
+         .heading-midtext {
+            margin-bottom: 2rem;
+            z-index: 100;
+            position: relative;
+         }
+
+         .features-container {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            @media only screen and (max-width:$bp-big) {
+               gap: 1rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               grid-template-columns: 1fr;
+               grid-template-rows: repeat(2, min-content);
+               gap: 2rem;
+            }
+         }
+
+
+         &__cards {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            height: max-content;
+            z-index: 100;
+
+            @media only screen and (max-width:$bp-larger) {
+               gap: 1rem;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               padding-bottom: 3rem;
+            }
+
+            .feature-card_container {
+               display: grid;
+               grid-template-columns: repeat(2, minmax(12rem, 1fr));
+               gap: 1.5rem;
+
+               @media only screen and (max-width:$bp-small) {
+                  display: flex;
+                  flex-direction: column;
+               }
+            }
+
+            .feature-card {
+               background-color: #fff;
+               border-radius: 6px;
+               box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+               padding: 2rem 1.2rem;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               transition: all 0.3s ease;
+
+               &.secure:hover {
+                  background-image: linear-gradient(to right, rgba($color-primary-600, 0.73), rgba($color-secondary-700, 0.93)), url(/img/secure.jpeg);
+                  background-size: cover;
+                  background-position: center;
+               }
+
+               &.interface:hover {
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.63), rgba($color-secondary-700, 0.93)), url(/img/interface.png);
+                  background-size: cover;
+                  background-position: center;
+               }
+
+               &.support:hover {
+                  background-image: linear-gradient(to right, rgba($color-secondary-600, 0.73), rgba($color-secondary-700, 0.93)), url(/img/support.jpeg);
+                  background-size: cover;
+                  background-position: center;
+               }
+
+               &:hover {
+                  background-image: linear-gradient(to right, rgba($color-primary-600, 0.73), rgba($color-primary-700, 0.93)), url(/img/main-image-2.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+                  .feature-card__icon {
+                     color: $color-grey-light-1;
+                  }
+
+                  .feature-card__title {
+                     color: $color-grey-light-1;
+                  }
+
+                  .feature-card__text {
+                     color: $color-grey-light-1;
+                  }
+               }
+
+               &__icon {
+                  font-size: 3rem;
+                  color: $color-primary-600;
+                  margin-bottom: 1.3rem;
+                  transition: color 0.3s ease;
+               }
+
+               &__title {
+                  font-size: 1.5rem;
+                  color: #333;
+                  margin-bottom: .8rem;
+
+                  @media only screen and (max-width:$bp-big) {
+                     font-size: 1.37rem;
+                  }
+
+                  @media only screen and (max-width:$bp-small) {
+                     font-size: 2rem;
+                  }
+               }
+
+               &__text {
+                  font-size: 1.3rem;
+                  color: #666;
+                  font-weight: 500;
+
+                  @media only screen and (max-width:$bp-small) {
+                     font-size: 1.6rem;
+                  }
+               }
+            }
+         }
+
+         &__texts {
+            padding: 0 2rem;
+            z-index: 100;
+
+            @media only screen and (max-width:$bp-larger) {
+               padding: 0 1rem;
+               padding-right: 0;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               padding: 3rem 0;
+            }
+
+            .feature-heading {
+               font-size: 3.7rem;
+               font-weight: 700;
+               margin-bottom: 1.2rem;
+
+               @media only screen and (max-width:$bp-larger) {
+                  font-size: 2.7rem;
+               }
+
+               span {
+                  color: $color-primary-900;
+               }
+            }
+
+            .feature-subtext {
+               font-size: 1.5rem;
+               font-weight: 400;
+
+               @media only screen and (max-width:$bp-mid) {
+                  font-size: 1.7rem;
+               }
+            }
+         }
+      }
+
+      .overview-section,
+      .visual-section,
+      .benefits-section {
+         padding: 5rem 3rem;
+         width: 100%;
+         margin: 0 auto;
+         text-align: center;
+
+         @media only screen and (min-width: $bp-monitor) {
+            width: 160rem;
+         }
+
+         .heading-midtext {
+            margin-bottom: 2rem;
+         }
+
+         .heading-minitext {
+            font-size: 2rem;
+            line-height: 1.8;
+            max-width: 90%;
+            margin: 0 auto;
+         }
+      }
+
+      .visual-section .visual-images {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 2rem;
+         padding: 2rem 0;
+
+         .image-container {
+
+            .image-box {
+               position: relative;
+               height: 40rem;
+               overflow: hidden;
+            }
+
+            .visual-img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               object-position: 50% 20%;
+               border-radius: 0.5rem;
+            }
+
+            .heading-minitext {
+               font-size: 2rem;
+               margin-top: 1rem;
+            }
+         }
+      }
+
+      .benefits-section {
+         padding: 5rem 2rem;
+
+         .benefits-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 0 auto;
+            width: 90%;
+            padding: 2rem 0;
+
+
+            .benefit-item {
+               background-color: $color-grey-light-2;
+               padding: 2rem;
+               border-radius: 0.8rem;
+               display: flex;
+               align-items: center;
+               gap: 2rem;
+
+
+               .benefit-icon {
+                  font-size: 3rem;
+                  color: $color-primary-500;
+               }
+
+               .benefit-text {
+                  text-align: left;
+
+                  .heading-subtext {
+                     font-weight: 600;
+                  }
+               }
+            }
+         }
+      }
+
+      @media (max-width: 768px) {
+
+         .visual-section .visual-images,
+         .benefits-list {
+            grid-template-columns: 1fr;
+         }
+
+         .benefit-item {
+            flex-direction: column;
+            align-items: flex-start;
+         }
+      }
+
+
+      .services-container_box.single.active {
+         background-color: $color-primary-600;
+         color: $color-primary-50;
+
+         .box-redirection {
+            background-color: $color-primary-950;
+            transition: background-color .3s ease;
+
+            &:hover {
+               background-color: $color-primary-500;
+            }
+
+            .redirection-icon {
+               font-size: 2.5rem;
+               rotate: -135deg;
+               color: $color-grey-light-1;
+            }
+         }
+
+         .box-info_icon {
+            border: 1px dashed $color-grey-light-1 ;
+            color: $color-grey-light-1;
+
+            &:hover {
+               background-color: $color-grey-light-1;
+               color: $color-primary-600;
+            }
+         }
+
+
+         .heading-subtext {
+            color: $color-grey-light-1;
+         }
+
+         .heading-minitext {
+            color: $color-grey-light-1;
+         }
+      }
+
+
+   }
+}

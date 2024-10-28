@@ -1,0 +1,202 @@
+.initial-navigation {
+   display: flex;
+}
+
+.sticky-nav {
+   position: fixed !important;
+   top: 0 !important;
+   left: 0 !important;
+   right: 0 !important;
+   width: 100% !important;
+   max-width: 100% !important;
+   height: 8rem !important;
+   padding-top: 0 !important;
+   padding-bottom: 0rem !important;
+   background-color: rgba($color-primary-950, 0.6) !important;
+   backdrop-filter: blur(5px);
+   box-shadow: 0 1.2rem 3.2rem rgba($color-primary-400, 0.2) !important;
+   border-radius: 0 !important;
+
+
+}
+
+.navigation-header {
+   width: 120rem;
+   position: absolute;
+   top: 2rem;
+   left: 0;
+   right: 0;
+   z-index: 9999999;
+   display: flex;
+   gap: 5rem;
+   align-items: center;
+   height: 6rem;
+   padding: 2rem;
+   margin: 0 auto;
+   transition: all 0.3s ease;
+
+   @media only screen and (min-width: $bp-monitor) {
+      width: 160rem;
+   }
+
+   @media only screen and (max-width:$bp-larger) {
+      width: 90%;
+      height: 6rem;
+      padding: 1.5rem;
+
+   }
+
+   @media only screen and (max-width:$bp-big) {
+
+      height: 5rem;
+      padding: 1rem;
+   }
+
+   .logo {
+      height: 3.5rem;
+
+      @media only screen and (max-width:$bp-big) {
+         height: 2.2rem;
+      }
+   }
+
+   .main-nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &-top {
+         display: flex;
+         align-items: center;
+         justify-content: end;
+         border-bottom: 1px solid $color-primary-50;
+         padding: 1rem 0;
+
+         &_contact {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 1.5rem;
+            border-right: .5px solid $color-primary-50;
+            font-size: 1.4rem;
+
+            &--links {
+               display: flex;
+               align-items: center;
+               gap: 1rem;
+               margin-right: 1.5rem;
+               font-weight: 600;
+
+               color: $color-primary-50;
+
+               &:hover {
+
+
+                  .nav-icon,
+                  .link-item {
+                     color: $color-primary-400;
+                     text-decoration: underline;
+                     cursor: pointer;
+                     transition: all 0.2s ease;
+                  }
+               }
+
+               .nav-icon {
+                  font-size: 1.5rem;
+               }
+
+               .link-item {
+                  color: $color-primary-50;
+                  cursor: pointer;
+                  transition: all 0.2s ease;
+               }
+            }
+         }
+
+         &_socials {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 1.6rem;
+            color: $color-primary-50;
+            margin-left: 1.5rem;
+
+            .nav-icon {
+               font-size: 1.6rem;
+               color: $color-primary-50;
+
+               &:hover {
+                  color: $color-primary-400
+               }
+            }
+         }
+      }
+   }
+
+   .main-nav-list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .button-group {
+         display: flex;
+         align-items: center;
+         gap: 1rem;
+      }
+   }
+
+   .main-nav-link:link,
+   .main-nav-link:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-primary-50;
+      font-weight: 600;
+      font-size: 1.6rem;
+      padding: 1rem;
+
+      &::before {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         display: block;
+         content: '';
+         height: 1px;
+         width: 0px;
+         background-color: $color-grey-light-1;
+      }
+
+      @media only screen and (max-width:$bp-big) {
+         font-size: 2rem;
+      }
+   }
+
+   .main-nav-link:hover,
+   .main-nav-link:active {
+      padding: .5rem 1rem;
+      box-shadow: inset 0 0 0 1px $color-primary-500;
+      border-radius: 5px;
+      color: $color-primary-400;
+   }
+
+   .button-group {
+
+      @media only screen and (max-width:$bp-big) {
+         flex-direction: column;
+         gap: 2rem;
+      }
+
+      .hero-btn-dark {
+         font-size: 1.2rem;
+         padding: 1rem 1.5rem;
+         margin-right: 0;
+         width: max-content;
+
+         @media only screen and (max-width:$bp-big) {
+            font-size: 1.5rem;
+
+            margin: 1rem 0;
+         }
+      }
+   }
+}
