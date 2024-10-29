@@ -531,8 +531,8 @@ body.home {
     justify-content: center;
     background-color: #fff; }
     body.home .home-container .section-statistics .statistics {
-      padding: 0 3rem 8rem 3rem;
-      width: 100%;
+      padding: 5rem 3rem 8rem 3rem;
+      width: 90%;
       margin: 0 auto;
       height: 100%;
       z-index: 1; }
@@ -1376,7 +1376,8 @@ body.home {
     body.home .home-container .project-grid .equipments-item,
     body.home .home-container .equipments-grid .project-item,
     body.home .home-container .equipments-grid .equipments-item {
-      position: relative;
+      display: flex;
+      flex-direction: column;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -1399,6 +1400,7 @@ body.home {
         width: 100%;
         height: 25rem;
         object-fit: cover;
+        flex-shrink: 0;
         transition: transform 0.4s ease; }
       body.home .home-container .project-grid .project-item:hover .project-image,
       body.home .home-container .project-grid .project-item:hover .equipments-image,
@@ -1417,8 +1419,14 @@ body.home {
       body.home .home-container .equipments-grid .project-item .equipments-details,
       body.home .home-container .equipments-grid .equipments-item .project-details,
       body.home .home-container .equipments-grid .equipments-item .equipments-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Spread content evenly */
         padding: 2rem;
-        background: #fff; }
+        background: #fff;
+        flex-grow: 1;
+        /* Allow details to grow and fill space */ }
         body.home .home-container .project-grid .project-item .project-details .heading-subtext,
         body.home .home-container .project-grid .project-item .equipments-details .heading-subtext,
         body.home .home-container .project-grid .equipments-item .project-details .heading-subtext,
@@ -1427,24 +1435,38 @@ body.home {
         body.home .home-container .equipments-grid .project-item .equipments-details .heading-subtext,
         body.home .home-container .equipments-grid .equipments-item .project-details .heading-subtext,
         body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-subtext {
-          font-weight: 600; }
-        body.home .home-container .project-grid .project-item .project-details .heading-subtext,
-        body.home .home-container .project-grid .project-item .project-details .heading-minitext,
-        body.home .home-container .project-grid .project-item .equipments-details .heading-subtext,
-        body.home .home-container .project-grid .project-item .equipments-details .heading-minitext,
-        body.home .home-container .project-grid .equipments-item .project-details .heading-subtext,
-        body.home .home-container .project-grid .equipments-item .project-details .heading-minitext,
-        body.home .home-container .project-grid .equipments-item .equipments-details .heading-subtext,
-        body.home .home-container .project-grid .equipments-item .equipments-details .heading-minitext,
-        body.home .home-container .equipments-grid .project-item .project-details .heading-subtext,
-        body.home .home-container .equipments-grid .project-item .project-details .heading-minitext,
-        body.home .home-container .equipments-grid .project-item .equipments-details .heading-subtext,
-        body.home .home-container .equipments-grid .project-item .equipments-details .heading-minitext,
-        body.home .home-container .equipments-grid .equipments-item .project-details .heading-subtext,
-        body.home .home-container .equipments-grid .equipments-item .project-details .heading-minitext,
-        body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-subtext,
-        body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-minitext {
+          font-weight: 600;
           margin-bottom: 1.5rem; }
+        body.home .home-container .project-grid .project-item .project-details .heading-minitext,
+        body.home .home-container .project-grid .project-item .equipments-details .heading-minitext,
+        body.home .home-container .project-grid .equipments-item .project-details .heading-minitext,
+        body.home .home-container .project-grid .equipments-item .equipments-details .heading-minitext,
+        body.home .home-container .equipments-grid .project-item .project-details .heading-minitext,
+        body.home .home-container .equipments-grid .project-item .equipments-details .heading-minitext,
+        body.home .home-container .equipments-grid .equipments-item .project-details .heading-minitext,
+        body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-minitext {
+          flex-grow: 1;
+          margin-bottom: 1.5rem; }
+        body.home .home-container .project-grid .project-item .project-details a,
+        body.home .home-container .project-grid .project-item .equipments-details a,
+        body.home .home-container .project-grid .equipments-item .project-details a,
+        body.home .home-container .project-grid .equipments-item .equipments-details a,
+        body.home .home-container .equipments-grid .project-item .project-details a,
+        body.home .home-container .equipments-grid .project-item .equipments-details a,
+        body.home .home-container .equipments-grid .equipments-item .project-details a,
+        body.home .home-container .equipments-grid .equipments-item .equipments-details a {
+          margin-top: auto;
+          /* Ensures the link is pushed to the bottom */ }
+        body.home .home-container .project-grid .project-item .project-details button,
+        body.home .home-container .project-grid .project-item .equipments-details button,
+        body.home .home-container .project-grid .equipments-item .project-details button,
+        body.home .home-container .project-grid .equipments-item .equipments-details button,
+        body.home .home-container .equipments-grid .project-item .project-details button,
+        body.home .home-container .equipments-grid .project-item .equipments-details button,
+        body.home .home-container .equipments-grid .equipments-item .project-details button,
+        body.home .home-container .equipments-grid .equipments-item .equipments-details button {
+          align-self: flex-start;
+          /* Optional, to ensure button stays to the left */ }
   body.home .home-container .section-project_values {
     padding: 8rem 3rem;
     position: relative;
@@ -2151,7 +2173,7 @@ body.home {
     height: max-content;
     position: relative; }
     body.home .home-container .equipments-hero .equipments-background {
-      background-image: url(../img/equipments/equipments-bg.jpg);
+      background-image: url(../img/equipments/equipments-bg-2.jpg);
       background-position: 50% 80%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -2197,6 +2219,136 @@ body.home {
       background-color: #f2f7fd;
       width: 100%;
       z-index: 100; }
+  body.home .home-container .section-equipments-benefits {
+    background-image: url(../img/equipments/equipments-bg-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 8rem 3rem; }
+    body.home .home-container .section-equipments-benefits .equipments-benefits-background_overlay {
+      background-color: transparent;
+      background-image: linear-gradient(90deg, transparent 70%, #2A2F35 0%);
+      opacity: 1;
+      transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute; }
+    body.home .home-container .section-equipments-benefits .section-equipments-benefits_container {
+      padding: 0 3rem;
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+      z-index: 1;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 1.5rem; }
+      @media only screen and (min-width: 100em) {
+        body.home .home-container .section-equipments-benefits .section-equipments-benefits_container {
+          width: 160rem; } }
+      body.home .home-container .section-equipments-benefits .section-equipments-benefits_container .container-right {
+        background-color: #fa3d15;
+        color: #fff;
+        z-index: 100;
+        padding: 4rem; }
+        body.home .home-container .section-equipments-benefits .section-equipments-benefits_container .container-right .tag {
+          color: #fff; }
+        body.home .home-container .section-equipments-benefits .section-equipments-benefits_container .container-right .equipments-benefits-list {
+          list-style: none;
+          padding: 0;
+          margin: 2rem 0;
+          display: grid;
+          gap: 1.5rem; }
+          body.home .home-container .section-equipments-benefits .section-equipments-benefits_container .container-right .equipments-benefits-list li {
+            display: flex;
+            align-items: center;
+            gap: 1rem; }
+            body.home .home-container .section-equipments-benefits .section-equipments-benefits_container .container-right .equipments-benefits-list li .list-icon {
+              background-color: #fff;
+              border-radius: 50%;
+              width: 2rem;
+              height: 2rem;
+              display: flex;
+              align-items: center;
+              justify-content: center; }
+            body.home .home-container .section-equipments-benefits .section-equipments-benefits_container .container-right .equipments-benefits-list li i {
+              color: #fa3d15;
+              font-size: 1.5rem; }
+  body.home .home-container .single-equipment-hero {
+    padding: 10rem 3rem;
+    background-color: #2a2f35;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: relative; }
+    body.home .home-container .single-equipment-hero .single-equipment-background {
+      background-image: url(../img/equipments/hilux.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3; }
+    body.home .home-container .single-equipment-hero_container {
+      width: 100%;
+      height: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 0 auto;
+      z-index: 100;
+      text-align: center; }
+      @media only screen and (min-width: 100em) {
+        body.home .home-container .single-equipment-hero_container {
+          width: 160rem; } }
+      body.home .home-container .single-equipment-hero_container .hero-text {
+        position: relative;
+        z-index: 1;
+        padding: 3rem 0;
+        color: #fff;
+        margin-top: 3rem;
+        margin-bottom: 2rem; }
+        body.home .home-container .single-equipment-hero_container .hero-text .heading-text {
+          font-size: 6rem;
+          margin-bottom: 1.5rem; }
+        body.home .home-container .single-equipment-hero_container .hero-text .tag {
+          color: #fff; }
+    body.home .home-container .single-equipment-hero .hero-aside {
+      font-size: 11rem;
+      font-weight: 700;
+      position: absolute;
+      bottom: -12rem;
+      right: 0;
+      opacity: 0.5; }
+  body.home .home-container .equipment-overview {
+    padding: 8rem 3rem 2rem 3rem;
+    width: 100%;
+    margin: 0 auto; }
+    body.home .home-container .equipment-overview_top {
+      display: flex;
+      gap: 3rem;
+      text-align: left; }
+    body.home .home-container .equipment-overview_bottom {
+      text-align: left;
+      gap: 3rem;
+      margin-top: 4rem;
+      width: 70%; }
+    body.home .home-container .equipment-overview .heading-subtext {
+      font-weight: 600; }
+    @media only screen and (min-width: 100em) {
+      body.home .home-container .equipment-overview {
+        width: 160rem; } }
+    body.home .home-container .equipment-overview .heading-midtext {
+      margin-bottom: 2rem; }
+    body.home .home-container .equipment-overview .heading-minitext {
+      font-size: 1.3rem;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1.5rem; }
 
 .naira-input-container input {
   padding-left: 3rem; }

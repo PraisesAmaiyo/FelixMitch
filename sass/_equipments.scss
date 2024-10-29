@@ -12,7 +12,7 @@ body.home {
          position: relative;
 
          .equipments-background {
-            background-image: url(../img/equipments/equipments-bg.jpg);
+            background-image: url(../img/equipments/equipments-bg-2.jpg);
             background-position: 50% 80%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -74,5 +74,209 @@ body.home {
             z-index: 100;
          }
       }
+
+      .section-equipments-benefits {
+         background-image: url(../img/equipments/equipments-bg-3.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         padding: 8rem 3rem;
+
+         .equipments-benefits-background_overlay {
+            background-color: transparent;
+            background-image: linear-gradient(90deg, transparent 70%, $color-grey-dark-2 0%);
+            opacity: 1;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+         }
+
+         .section-equipments-benefits_container {
+            padding: 0 3rem;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            z-index: 1;
+            position: relative;
+
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 1.5rem;
+
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+
+            .container-right {
+               background-color: $color-primary-500;
+               color: $color-grey-light-1;
+               z-index: 100;
+               padding: 4rem;
+
+               .tag {
+                  color: $color-grey-light-1;
+               }
+
+               .equipments-benefits-list {
+                  list-style: none;
+                  padding: 0;
+                  margin: 2rem 0;
+                  display: grid;
+                  gap: 1.5rem;
+
+
+                  li {
+                     display: flex;
+                     align-items: center;
+                     gap: 1rem;
+
+                     .list-icon {
+                        background-color: $color-grey-light-1;
+                        border-radius: 50%;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                     }
+
+                     i {
+                        color: #fa3d15;
+                        font-size: 1.5rem;
+                     }
+                  }
+               }
+
+
+
+            }
+         }
+      }
+
+      // Single Equipment
+
+      .single-equipment-hero {
+         padding: 10rem 3rem;
+         background-color: #2a2f35;
+         background-repeat: no-repeat;
+         height: max-content;
+         position: relative;
+
+         .single-equipment-background {
+            background-image: url(../img/equipments/hilux.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+         }
+
+         &_container {
+            width: 100%;
+            height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+            text-align: center;
+
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .hero-text {
+               position: relative;
+               z-index: 1;
+               padding: 3rem 0;
+               color: $color-grey-light-1;
+               margin-top: 3rem;
+               margin-bottom: 2rem;
+
+               .heading-text {
+                  font-size: 6rem;
+                  margin-bottom: 1.5rem;
+               }
+
+               .tag {
+                  color: $color-grey-light-1;
+               }
+
+
+            }
+         }
+
+         .hero-aside {
+            font-size: 11rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: -12rem;
+            right: 0;
+            opacity: 0.5;
+         }
+
+         // .line {
+         //    position: absolute;
+         //    bottom: 0;
+         //    left: 0;
+         //    height: 4rem;
+         //    background-color: $color-secondary-50;
+         //    width: 100%;
+         //    z-index: 100;
+         // }
+      }
+
+      .equipment-overview {
+         padding: 8rem 3rem 2rem 3rem;
+         width: 100%;
+         margin: 0 auto;
+
+         &_top {
+            display: flex;
+            gap: 3rem;
+            text-align: left;
+         }
+
+         &_bottom {
+            text-align: left;
+            gap: 3rem;
+            margin-top: 4rem;
+            width: 70%;
+         }
+
+         .heading-subtext {
+            font-weight: 600;
+         }
+
+
+         @media only screen and (min-width: $bp-monitor) {
+            width: 160rem;
+         }
+
+         .heading-midtext {
+            margin-bottom: 2rem;
+         }
+
+         .heading-minitext {
+            font-size: 1.3rem;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1.5rem;
+         }
+      }
+
+
+
    }
 }
