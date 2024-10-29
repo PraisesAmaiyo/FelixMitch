@@ -590,10 +590,10 @@ body.home {
     body.home .home-container .section-values .background-overlay {
       background-image: url(../img/main-img-2.jpg);
       background-attachment: fixed;
-      background-position: center;
+      background-position: 50% 90%;
       background-size: cover;
       background-repeat: no-repeat;
-      opacity: 0.6;
+      opacity: 0.4;
       transition: background .3s;
       height: 100%;
       width: 100%;
@@ -641,47 +641,72 @@ body.home {
             border-radius: 50px; }
           body.home .home-container .section-values .values-right .statement-text_heading {
             font-size: 2.2rem; }
-  body.home .home-container .section-featured-projects {
+  body.home .home-container .section-featured-projects,
+  body.home .home-container .section-featured-equipments {
     padding: 8rem 3rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000;
     background-color: #fff; }
-    body.home .home-container .section-featured-projects .featured-projects {
+    body.home .home-container .section-featured-projects .featured-projects,
+    body.home .home-container .section-featured-projects .featured-equipments,
+    body.home .home-container .section-featured-equipments .featured-projects,
+    body.home .home-container .section-featured-equipments .featured-equipments {
       padding: 0 3rem;
       width: 100%;
       margin: 0 auto;
       height: 100%;
       z-index: 1; }
       @media only screen and (min-width: 100em) {
-        body.home .home-container .section-featured-projects .featured-projects {
+        body.home .home-container .section-featured-projects .featured-projects,
+        body.home .home-container .section-featured-projects .featured-equipments,
+        body.home .home-container .section-featured-equipments .featured-projects,
+        body.home .home-container .section-featured-equipments .featured-equipments {
           width: 160rem; } }
-      body.home .home-container .section-featured-projects .featured-projects-text {
+      body.home .home-container .section-featured-projects .featured-projects-text,
+      body.home .home-container .section-featured-projects .featured-equipments-text,
+      body.home .home-container .section-featured-equipments .featured-projects-text,
+      body.home .home-container .section-featured-equipments .featured-equipments-text {
         color: #000;
         display: grid;
         grid-template-columns: 42% 55%;
         align-items: center;
         gap: 3%;
         margin-bottom: 5rem; }
-        body.home .home-container .section-featured-projects .featured-projects-text .heading-minitext {
+        body.home .home-container .section-featured-projects .featured-projects-text .heading-minitext,
+        body.home .home-container .section-featured-projects .featured-equipments-text .heading-minitext,
+        body.home .home-container .section-featured-equipments .featured-projects-text .heading-minitext,
+        body.home .home-container .section-featured-equipments .featured-equipments-text .heading-minitext {
           margin-bottom: 3rem; }
-        body.home .home-container .section-featured-projects .featured-projects-text .line {
+        body.home .home-container .section-featured-projects .featured-projects-text .line,
+        body.home .home-container .section-featured-projects .featured-equipments-text .line,
+        body.home .home-container .section-featured-equipments .featured-projects-text .line,
+        body.home .home-container .section-featured-equipments .featured-equipments-text .line {
           height: 3px;
           width: 7rem;
           background-color: #fa3d15;
           content: '';
           display: block;
           margin-top: 1.3rem; }
-      body.home .home-container .section-featured-projects .featured-projects .swiper {
+      body.home .home-container .section-featured-projects .featured-projects .swiper,
+      body.home .home-container .section-featured-projects .featured-equipments .swiper,
+      body.home .home-container .section-featured-equipments .featured-projects .swiper,
+      body.home .home-container .section-featured-equipments .featured-equipments .swiper {
         width: 100%;
         height: 30rem; }
         @media only screen and (min-width: 100em) {
-          body.home .home-container .section-featured-projects .featured-projects .swiper {
+          body.home .home-container .section-featured-projects .featured-projects .swiper,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper {
             height: 40rem; } }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-slide {
+      body.home .home-container .section-featured-projects .featured-projects .swiper-slide,
+      body.home .home-container .section-featured-projects .featured-equipments .swiper-slide,
+      body.home .home-container .section-featured-equipments .featured-projects .swiper-slide,
+      body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide {
         position: relative;
         overflow: hidden;
         display: flex;
@@ -689,16 +714,25 @@ body.home {
         justify-content: center;
         background-color: #000;
         cursor: grab; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:active {
+        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:active,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:active,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:active,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:active {
           cursor: grabbing; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide {
+        body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide {
           position: relative;
           height: 100%;
           width: 100%;
           display: flex;
           align-items: center;
           justify-content: center; }
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide_overlay {
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide_overlay,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide_overlay,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide_overlay,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide_overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -708,7 +742,10 @@ body.home {
             background-position: center;
             transition: opacity 0.3s ease;
             z-index: 1; }
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content {
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content {
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -716,53 +753,107 @@ body.home {
             opacity: 0;
             z-index: 2;
             transition: opacity 0.3s ease; }
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper {
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper {
               padding: 2rem;
               display: flex;
               justify-content: center;
               flex-direction: column; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag {
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .tag {
                 font-size: 1rem;
                 margin-bottom: .7em;
                 color: #fff; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a {
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a {
                 text-decoration: none;
                 color: #fff;
                 cursor: pointer; }
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover {
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a:hover {
                   cursor: pointer;
                   color: #fc653c; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext {
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext {
                 font-size: 2.2rem;
                 font-weight: 700; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link {
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link {
                 display: flex;
                 padding-top: 1.2rem;
                 border-top: 1px solid rgba(255, 255, 255, 0.6); }
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon {
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon {
                   font-size: 1rem;
                   rotate: 45deg;
                   color: #fff; }
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover {
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover {
                     color: #fc653c; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-slide_overlay {
+        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-slide_overlay,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .project-slide_overlay,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .project-slide_overlay,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .project-slide_overlay {
           opacity: 0.3; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-content {
+        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-content,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .project-content,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .project-content,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .project-content {
           opacity: 1; }
       body.home .home-container .section-featured-projects .featured-projects .swiper-button-next,
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev {
+      body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev,
+      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next,
+      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev,
+      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next,
+      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev,
+      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next,
+      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev {
         color: #fff;
         background-color: rgba(0, 0, 0, 0.6);
         padding: 3rem; }
         body.home .home-container .section-featured-projects .featured-projects .swiper-button-next::after,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev::after {
+        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev::after,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next::after,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev::after,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next::after,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev::after,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next::after,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev::after {
           font-size: 3rem; }
         body.home .home-container .section-featured-projects .featured-projects .swiper-button-next:hover,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev:hover {
+        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev:hover,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next:hover,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev:hover,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next:hover,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev:hover,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next:hover,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev:hover {
           background-color: rgba(0, 0, 0, 0.9); }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-next {
+      body.home .home-container .section-featured-projects .featured-projects .swiper-button-next,
+      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next,
+      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next,
+      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next {
         right: 10px; }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev {
+      body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev,
+      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev,
+      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev,
+      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev {
         left: 10px; }
   body.home .home-container .section-testimonial {
     padding: 8rem 3rem;
@@ -1275,35 +1366,84 @@ body.home {
       background-color: #f2f7fd;
       width: 100%;
       z-index: 100; }
-  body.home .home-container .project-grid {
+  body.home .home-container .project-grid,
+  body.home .home-container .equipments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2.5rem;
     padding: 1rem; }
-    body.home .home-container .project-grid .project-item {
+    body.home .home-container .project-grid .project-item,
+    body.home .home-container .project-grid .equipments-item,
+    body.home .home-container .equipments-grid .project-item,
+    body.home .home-container .equipments-grid .equipments-item {
       position: relative;
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       color: #000; }
-      body.home .home-container .project-grid .project-item:hover {
+      body.home .home-container .project-grid .project-item:hover,
+      body.home .home-container .project-grid .equipments-item:hover,
+      body.home .home-container .equipments-grid .project-item:hover,
+      body.home .home-container .equipments-grid .equipments-item:hover {
         transform: scale(1.03);
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); }
-      body.home .home-container .project-grid .project-item .project-image {
+      body.home .home-container .project-grid .project-item .project-image,
+      body.home .home-container .project-grid .project-item .equipments-image,
+      body.home .home-container .project-grid .equipments-item .project-image,
+      body.home .home-container .project-grid .equipments-item .equipments-image,
+      body.home .home-container .equipments-grid .project-item .project-image,
+      body.home .home-container .equipments-grid .project-item .equipments-image,
+      body.home .home-container .equipments-grid .equipments-item .project-image,
+      body.home .home-container .equipments-grid .equipments-item .equipments-image {
         width: 100%;
         height: 25rem;
         object-fit: cover;
         transition: transform 0.4s ease; }
-      body.home .home-container .project-grid .project-item:hover .project-image {
+      body.home .home-container .project-grid .project-item:hover .project-image,
+      body.home .home-container .project-grid .project-item:hover .equipments-image,
+      body.home .home-container .project-grid .equipments-item:hover .project-image,
+      body.home .home-container .project-grid .equipments-item:hover .equipments-image,
+      body.home .home-container .equipments-grid .project-item:hover .project-image,
+      body.home .home-container .equipments-grid .project-item:hover .equipments-image,
+      body.home .home-container .equipments-grid .equipments-item:hover .project-image,
+      body.home .home-container .equipments-grid .equipments-item:hover .equipments-image {
         transform: scale(1.05) rotate(-2deg); }
-      body.home .home-container .project-grid .project-item .project-details {
+      body.home .home-container .project-grid .project-item .project-details,
+      body.home .home-container .project-grid .project-item .equipments-details,
+      body.home .home-container .project-grid .equipments-item .project-details,
+      body.home .home-container .project-grid .equipments-item .equipments-details,
+      body.home .home-container .equipments-grid .project-item .project-details,
+      body.home .home-container .equipments-grid .project-item .equipments-details,
+      body.home .home-container .equipments-grid .equipments-item .project-details,
+      body.home .home-container .equipments-grid .equipments-item .equipments-details {
         padding: 2rem;
         background: #fff; }
-        body.home .home-container .project-grid .project-item .project-details .heading-subtext {
+        body.home .home-container .project-grid .project-item .project-details .heading-subtext,
+        body.home .home-container .project-grid .project-item .equipments-details .heading-subtext,
+        body.home .home-container .project-grid .equipments-item .project-details .heading-subtext,
+        body.home .home-container .project-grid .equipments-item .equipments-details .heading-subtext,
+        body.home .home-container .equipments-grid .project-item .project-details .heading-subtext,
+        body.home .home-container .equipments-grid .project-item .equipments-details .heading-subtext,
+        body.home .home-container .equipments-grid .equipments-item .project-details .heading-subtext,
+        body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-subtext {
           font-weight: 600; }
         body.home .home-container .project-grid .project-item .project-details .heading-subtext,
-        body.home .home-container .project-grid .project-item .project-details .heading-minitext {
+        body.home .home-container .project-grid .project-item .project-details .heading-minitext,
+        body.home .home-container .project-grid .project-item .equipments-details .heading-subtext,
+        body.home .home-container .project-grid .project-item .equipments-details .heading-minitext,
+        body.home .home-container .project-grid .equipments-item .project-details .heading-subtext,
+        body.home .home-container .project-grid .equipments-item .project-details .heading-minitext,
+        body.home .home-container .project-grid .equipments-item .equipments-details .heading-subtext,
+        body.home .home-container .project-grid .equipments-item .equipments-details .heading-minitext,
+        body.home .home-container .equipments-grid .project-item .project-details .heading-subtext,
+        body.home .home-container .equipments-grid .project-item .project-details .heading-minitext,
+        body.home .home-container .equipments-grid .project-item .equipments-details .heading-subtext,
+        body.home .home-container .equipments-grid .project-item .equipments-details .heading-minitext,
+        body.home .home-container .equipments-grid .equipments-item .project-details .heading-subtext,
+        body.home .home-container .equipments-grid .equipments-item .project-details .heading-minitext,
+        body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-subtext,
+        body.home .home-container .equipments-grid .equipments-item .equipments-details .heading-minitext {
           margin-bottom: 1.5rem; }
   body.home .home-container .section-project_values {
     padding: 8rem 3rem;
@@ -1571,6 +1711,7 @@ body.home {
       z-index: 100; }
   body.home .home-container .services-page-about,
   body.home .home-container .projects-about,
+  body.home .home-container .equipments-about,
   body.home .home-container .about-page-about {
     background-color: #f2f7fd;
     padding: 8rem 3rem;
@@ -1582,6 +1723,7 @@ body.home {
     color: #000; }
     body.home .home-container .services-page-about_container,
     body.home .home-container .projects-about_container,
+    body.home .home-container .equipments-about_container,
     body.home .home-container .about-page-about_container {
       position: relative;
       width: 100%;
@@ -1596,14 +1738,17 @@ body.home {
       @media only screen and (min-width: 100em) {
         body.home .home-container .services-page-about_container,
         body.home .home-container .projects-about_container,
+        body.home .home-container .equipments-about_container,
         body.home .home-container .about-page-about_container {
           width: 160rem; } }
       body.home .home-container .services-page-about_container .heading-text,
       body.home .home-container .projects-about_container .heading-text,
+      body.home .home-container .equipments-about_container .heading-text,
       body.home .home-container .about-page-about_container .heading-text {
         color: #000; }
       body.home .home-container .services-page-about_container .container-right .about-service-image,
       body.home .home-container .projects-about_container .container-right .about-service-image,
+      body.home .home-container .equipments-about_container .container-right .about-service-image,
       body.home .home-container .about-page-about_container .container-right .about-service-image {
         width: 90%;
         height: 100%;
@@ -1996,6 +2141,62 @@ body.home {
       color: #fff; }
     body.home .home-container .services-container_box.single.active .heading-minitext {
       color: #fff; }
+
+body.home {
+  overflow-x: hidden; }
+  body.home .home-container .equipments-hero {
+    padding: 10rem 3rem;
+    background-color: #2a2f35;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: relative; }
+    body.home .home-container .equipments-hero .equipments-background {
+      background-image: url(../img/equipments/equipments-bg.jpg);
+      background-position: 50% 80%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.4; }
+    body.home .home-container .equipments-hero_container {
+      width: 100%;
+      height: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 0 auto;
+      z-index: 100; }
+      @media only screen and (min-width: 100em) {
+        body.home .home-container .equipments-hero_container {
+          width: 160rem; } }
+      body.home .home-container .equipments-hero_container .hero-text {
+        position: relative;
+        z-index: 1;
+        padding: 3rem 0;
+        color: #fff;
+        margin-top: 3rem;
+        margin-bottom: 2rem; }
+        body.home .home-container .equipments-hero_container .hero-text .heading-text {
+          font-size: 6rem;
+          margin-bottom: 1.5rem; }
+    body.home .home-container .equipments-hero .hero-aside {
+      font-size: 11rem;
+      font-weight: 700;
+      position: absolute;
+      bottom: -13rem;
+      right: 0;
+      opacity: 0.5; }
+    body.home .home-container .equipments-hero .line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4rem;
+      color: red;
+      background-color: #f2f7fd;
+      width: 100%;
+      z-index: 100; }
 
 .naira-input-container input {
   padding-left: 3rem; }

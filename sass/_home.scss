@@ -495,10 +495,10 @@ body.home {
          .background-overlay {
             background-image: url(../img/main-img-2.jpg);
             background-attachment: fixed;
-            background-position: center;
+            background-position: 50% 90%;
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.6;
+            opacity: 0.4;
             transition: background .3s;
 
             height: 100%;
@@ -575,17 +575,19 @@ body.home {
          }
       }
 
-      .section-featured-projects {
+      .section-featured-projects,
+      .section-featured-equipments {
          padding: 8rem 3rem;
          position: relative;
          display: flex;
          flex-direction: column;
          align-items: center;
          justify-content: center;
-         color: $color-grey-light-1;
+         color: $color-grey-dark-1;
          background-color: $color-grey-light-1;
 
-         .featured-projects {
+         .featured-projects,
+         .featured-equipments {
             padding: 0 3rem;
             width: 100%;
             // max-width: 120rem;

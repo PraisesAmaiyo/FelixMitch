@@ -74,13 +74,17 @@ body.home {
          }
       }
 
-      .project-grid {
+
+
+      .project-grid,
+      .equipments-grid {
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
          gap: 2.5rem;
          padding: 1rem;
 
-         .project-item {
+         .project-item,
+         .equipments-item {
             position: relative;
             overflow: hidden;
             border-radius: 10px;
@@ -93,18 +97,21 @@ body.home {
                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             }
 
-            .project-image {
+            .project-image,
+            .equipments-image {
                width: 100%;
                height: 25rem;
                object-fit: cover;
                transition: transform 0.4s ease;
             }
 
-            &:hover .project-image {
+            &:hover .project-image,
+            &:hover .equipments-image {
                transform: scale(1.05) rotate(-2deg);
             }
 
-            .project-details {
+            .project-details,
+            .equipments-details {
                padding: 2rem;
                background: $color-grey-light-1;
 
