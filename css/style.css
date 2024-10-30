@@ -45,7 +45,7 @@ body {
 body.home {
   overflow-x: hidden; }
   body.home .home-container .about-page-hero .about-page-background {
-    background-image: url(../img/about-us/about-hero.jpg);
+    background-image: url(../img/about-us/about-hero.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body.home {
           padding-top: 1.5rem;
           font-size: 1.3rem; }
   body.home .home-container .section-core-values {
-    background-image: url(../img/about-us/about-bg-1.jpg);
+    background-image: url(../img/about-us/about-bg-1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body.home {
           border-radius: 2px 2px 2px 2px;
           box-shadow: 20px 20px 0px 0px #fc653c; }
   body.home .home-container .section-experience {
-    background-image: url(../img/about-us/about-1.jpg);
+    background-image: url(../img/about-us/about-1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -686,9 +686,12 @@ body.home {
               body.home .home-container .section-services .services-container_box .box-info_icon:hover {
                 background-color: #eb230b;
                 color: #fff; }
+              body.home .home-container .section-services .services-container_box .box-info_icon a {
+                color: inherit; }
           body.home .home-container .section-services .services-container_box .heading-subtext {
             color: #000;
-            font-weight: 600; }
+            font-weight: 600;
+            display: block; }
           body.home .home-container .section-services .services-container_box .heading-minitext {
             color: #000; }
   body.home .home-container .section-statistics {
@@ -2971,7 +2974,7 @@ select {
   font-weight: 600;
   letter-spacing: .3rem;
   margin-bottom: 2rem;
-  color: #fa3d15; }
+  color: #eb230b; }
 
 .hidden {
   display: none; }

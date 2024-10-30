@@ -380,12 +380,17 @@ body.home {
                            background-color: $color-primary-600;
                            color: $color-grey-light-1;
                         }
+
+                        a {
+                           color: inherit;
+                        }
                      }
                   }
 
                   .heading-subtext {
                      color: $color-grey-dark-1;
                      font-weight: 600;
+                     display: block;
                   }
 
                   .heading-minitext {
