@@ -76,3 +76,11 @@ document.querySelectorAll('.project-slide_overlay').forEach((el) => {
     el.style.backgroundImage = `url(${bg})`;
   }
 });
+
+// Pquipment Swiper images
+document.querySelectorAll('.equipment-slide_overlay').forEach((el) => {
+  const bg = el.getAttribute('data-bg');
+  if (bg) {
+    el.style.backgroundImage = `url(${bg})`;
+  }
+});
