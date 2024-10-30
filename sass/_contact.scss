@@ -1,0 +1,256 @@
+body.home {
+   overflow-x: hidden;
+
+   .home-container {
+
+      .contact-hero {
+         padding: 10rem 3rem;
+         background-color: #2a2f35;
+         background-repeat: no-repeat;
+         height: max-content;
+         position: relative;
+
+         .contact-background {
+            background-image: url(../img/contact/contact-bg.webp);
+            background-position: 50% 80%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.4;
+         }
+
+         &_container {
+            width: 100%;
+            height: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .hero-text {
+               position: relative;
+               z-index: 1;
+               padding: 3rem 0;
+               color: $color-grey-light-1;
+               margin-top: 3rem;
+               margin-bottom: 2rem;
+
+               .heading-text {
+                  font-size: 6rem;
+                  margin-bottom: 1.5rem;
+               }
+
+
+            }
+         }
+
+         .hero-aside {
+            font-size: 11rem;
+            font-weight: 700;
+            position: absolute;
+            bottom: -13rem;
+            right: 0;
+            opacity: 0.5;
+         }
+
+         .line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4rem;
+            color: red;
+            background-color: $color-secondary-50;
+            width: 100%;
+            z-index: 100;
+         }
+      }
+
+      .contact-info {
+         display: flex;
+         align-items: start;
+         gap: 3rem;
+
+         .heading-minitext {
+            font-weight: 600;
+            margin: 1.5rem 0 1rem 0;
+         }
+
+         &_right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+         }
+
+         &_left {
+            padding: 0 1rem;
+         }
+
+         &_left,
+         &_right {
+            width: 50%;
+
+            .contact-item {
+               font-size: 1.2rem;
+               font-weight: 500;
+            }
+
+
+            &--links {
+               display: flex;
+               gap: 1.2rem;
+               align-items: center;
+
+               font-size: 1.2rem;
+
+               .contact-icon {
+                  color: $color-primary-500;
+               }
+
+               .contact-item {
+                  color: $color-grey-dark-1;
+               }
+            }
+         }
+
+      }
+
+      .contact-section {
+         padding: 8rem 3rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+
+
+         .contact-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding-left: 2.5rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            z-index: 100;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+
+            .contact-form {
+               flex: 1;
+               background-color: $color-grey-dark-2;
+               color: $color-grey-light-1;
+               padding: 4rem;
+               display: flex;
+               flex-direction: column;
+
+               .tag {
+                  display: inline-block;
+                  font-size: 0.9rem;
+                  margin-bottom: 1rem;
+                  color: $color-primary-400;
+               }
+
+               .heading-midtext,
+               .heading-minitext {
+                  margin-bottom: 1.5rem;
+               }
+
+               .form {
+                  .form-group {
+                     display: flex;
+                     gap: 1rem;
+                     margin-bottom: 1.5rem;
+
+                     &.full-width {
+                        flex-direction: column;
+                     }
+
+                     .input-container {
+                        width: 100%;
+                     }
+
+
+                  }
+
+                  .hero-btn-light {
+                     width: 100%;
+                     padding: 1rem;
+                     background-color: #f7931e;
+
+                     font-size: 1.2rem;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     border: none;
+                     cursor: pointer;
+
+                     .submit-icon {
+                        margin-right: 0.5rem;
+                     }
+                  }
+               }
+            }
+
+            .contact-map {
+               flex: 1;
+
+               iframe {
+                  width: 100%;
+                  height: 100%;
+               }
+            }
+         }
+      }
+
+      .contact-socials {
+
+         padding: 4rem 3rem 8rem 3rem;
+         position: relative;
+
+         &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding-left: 2.5rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            text-align: center;
+            z-index: 100;
+
+            @media only screen and (min-width: $bp-monitor) {
+               width: 160rem;
+            }
+
+            .contact-socials_bottom {
+               display: flex;
+               gap: 2rem;
+               font-size: 2.5rem;
+               color: $color-primary-600;
+
+               .social-icon {
+                  transition: all .3s ease;
+
+                  &:hover {
+                     transform: scale(1.1);
+                     color: $color-grey-dark-2;
+                     cursor: pointer;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

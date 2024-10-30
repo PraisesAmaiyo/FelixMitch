@@ -58,10 +58,12 @@ const images = document.querySelectorAll('.slideshow-image');
 let currentIndex = 0;
 
 if (images.length > 0) {
-  console.log(images.length);
+  //   console.log(images.length);
+
   function showNextImage() {
     images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+    currentIndex = (currentIndex + 1) % images.length;
+
     images[currentIndex].classList.add('active');
   }
 
