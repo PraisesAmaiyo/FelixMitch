@@ -289,6 +289,30 @@ body.home {
             &.maintenance-support {
                background-image: url(../img/services/maintenance-support/maintenance-bg.webp);
             }
+
+            &.qaqc-inspection {
+               background-image: url(../img/services/qaqc-inspection/qaqc-inspection-bg.webp);
+            }
+
+            &.fabrication {
+               background-image: url(../img/services/fabrication/fabrication-bg.webp);
+               background-position: 20% 75%;
+            }
+
+            &.civil-construction {
+               background-image: url(../img/services/civil-construction/civil-bg.webp);
+               background-position: 20% 75%;
+            }
+
+            &.oil-tools-procurement {
+               background-image: url(../img/services/oil-tools-procurement/oil-tools-bg.jpeg);
+               background-position: 20% 75%;
+            }
+
+            &.manpower-supply {
+               background-image: url(../img/services/oil-tools-procurement/oil-tools-bg.jpeg);
+               background-position: 20% 75%;
+            }
          }
 
          &_container {
