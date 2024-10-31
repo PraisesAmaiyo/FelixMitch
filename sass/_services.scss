@@ -285,6 +285,10 @@ body.home {
                background-image: url(../img/services/pipe-maintenance/pipe-maintenance-bg.webp);
                background-position: 20% 70%;
             }
+
+            &.maintenance-support {
+               background-image: url(../img/services/maintenance-support/maintenance-bg.webp);
+            }
          }
 
          &_container {
