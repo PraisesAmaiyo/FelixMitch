@@ -69,8 +69,8 @@ $bp-monitor: 100em;
 $bp-largest: 75em;
 $bp-larger: 62.5em;
 $bp-big: 50.3em;
-$bp-large: 45.7em;
-$bp-largeDns: 43.3em;
+$bp-large-extra: 45.7em;
+$bp-large: 43.3em;
 $bp-medium: 38.6em;
 $bp-mid: 35.6em;
 $bp-small: 30.5em;
@@ -89,8 +89,8 @@ html {
    box-sizing: border-box;
    font-size: 62.5%;
 
-   @media only screen and (max-width:$bp-small-extra) {
-      font-size: 50%;
+   @media only screen and (max-width:$bp-big) {
+      font-size: 55%;
    }
 }
 
