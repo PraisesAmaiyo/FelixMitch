@@ -2315,7 +2315,6 @@ body.home {
     height: max-content;
     position: relative; }
     body.home .home-container .single-service-hero .single-service-background {
-      background-image: url(../img/services/oil-spill/oilspill-hero.jpeg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -2325,6 +2324,10 @@ body.home {
       top: 0;
       left: 0;
       opacity: 0.4; }
+      body.home .home-container .single-service-hero .single-service-background.oil-spill {
+        background-image: url(../img/services/oil-spill/oilspill-hero.jpeg); }
+      body.home .home-container .single-service-hero .single-service-background.well-completion {
+        background-image: url(../img/services/well-completion/well-completion-bg.webp); }
     body.home .home-container .single-service-hero_container {
       width: 100%;
       height: 100%;
@@ -3048,9 +3051,9 @@ select {
   height: 8rem !important;
   padding-top: 0 !important;
   padding-bottom: 0rem !important;
-  background-color: rgba(67, 7, 8, 0.6) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
   backdrop-filter: blur(5px);
-  box-shadow: 0 1.2rem 3.2rem rgba(252, 101, 60, 0.2) !important;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2) !important;
   border-radius: 0 !important; }
 
 .navigation-header {

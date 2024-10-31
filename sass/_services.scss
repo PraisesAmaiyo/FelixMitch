@@ -255,8 +255,6 @@ body.home {
 
 
       // Single Service Page
-
-
       .single-service-hero {
          padding: 10rem 3rem;
          background-color: #2a2f35;
@@ -265,7 +263,6 @@ body.home {
          position: relative;
 
          .single-service-background {
-            background-image: url(../img/services/oil-spill/oilspill-hero.jpeg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -275,6 +272,14 @@ body.home {
             top: 0;
             left: 0;
             opacity: 0.4;
+
+            &.oil-spill {
+               background-image: url(../img/services/oil-spill/oilspill-hero.jpeg);
+            }
+
+            &.well-completion {
+               background-image: url(../img/services/well-completion/well-completion-bg.webp);
+            }
          }
 
          &_container {
