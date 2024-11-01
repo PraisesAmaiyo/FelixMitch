@@ -13,9 +13,9 @@ var swiper = new Swiper('.swiper-3', {
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 3,
   spaceBetween: 10,
-  grid: {
-    rows: 2,
-  },
+  //   grid: {
+  //     rows: 2,
+  //   },
   loop: true,
   autoplay: {
     delay: 0,
@@ -27,6 +27,27 @@ var swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
 });
+
+// var swiper = new Swiper('.mySwiper', {
+//   loop: true,
+//   spaceBetween: 10,
+//   speed: 3000,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 3, // On small screens, show 1 logo per slide
+//     },
+//     768: {
+//       slidesPerView: 2, // On medium screens, show 2 logos per slide
+//     },
+//     1024: {
+//       slidesPerView: 3, // On larger screens, show 3 logos per slide
+//     },
+//   },
+// });
 
 var swiper = new Swiper('.mySwiper-2', {
   slidesPerView: 3,
@@ -40,6 +61,26 @@ var swiper = new Swiper('.mySwiper-2', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+    },
+
+    320: {
+      slidesPerView: 2,
+    },
+    //  768: {
+    //    slidesPerView: 2,
+    //  },
+    //  1024: {
+    //    slidesPerView: 3,
+    //  },
+  },
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 3000,
 });
 
 var swiper = new Swiper('.swiper-3', {
