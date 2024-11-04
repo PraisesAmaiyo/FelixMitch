@@ -180,7 +180,6 @@ body.home {
          background-repeat: no-repeat;
          background-size: 35vw auto;
 
-
          padding: 8rem 3rem;
          position: relative;
          display: flex;
@@ -188,6 +187,11 @@ body.home {
          align-items: center;
          justify-content: center;
          color: $color-grey-dark-1;
+
+         @media only screen and (max-width:$bp-small) {
+            padding: 6rem 1.5rem;
+         }
+
 
          &_container {
             position: relative;
@@ -205,6 +209,24 @@ body.home {
             @media only screen and (min-width: $bp-monitor) {
                width: 160rem;
             }
+
+
+            @media only screen and (max-width:$bp-medium) {
+               grid-template-columns: 100%;
+               grid-template-rows: auto;
+               gap: 3rem;
+               padding: 0;
+
+               s .container-left {
+                  order: 1
+               }
+
+               .container-right {
+                  order: 2
+               }
+
+            }
+
 
             .heading-text {
                color: $color-grey-dark-1
@@ -227,7 +249,7 @@ body.home {
             .container-right {
 
                &__cards {
-                  height: max-content;
+                  height: auto;
 
                   .tag {
                      margin-bottom: 1rem;
@@ -235,7 +257,7 @@ body.home {
 
                   .stats-cards {
                      display: grid;
-                     grid-template-rows: repeat(2, 1fr);
+                     grid-template-rows: repeat(2, min-content);
                      gap: 1.5rem;
                   }
 

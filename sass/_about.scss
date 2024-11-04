@@ -35,21 +35,32 @@ body.home {
 
          .company-feature-card_container {
             display: grid;
-            grid-template-columns: repeat(2, 50%);
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
             gap: 1.5rem;
+            height: auto;
+
+
+            @media only screen and (max-width: 320px) {
+
+               .company-feature-card_empty {
+                  // order: 1
+                  display: none;
+               }
+            }
 
             .company-feature-card {
                background-color: $color-grey-light-1;
                box-shadow: 12px 23px 29px 0 rgba(0, 0, 0, .15);
                padding: 1.5rem;
                border-radius: 5px;
+               height: max-content;
 
 
                .stats {
                   display: flex;
                   align-items: center;
                   gap: 2rem;
-                  padding-bottom: 5rem;
+                  padding-bottom: 3rem;
                   border-bottom: 1px solid $color-grey-dark-2;
 
                   &-icon {
@@ -105,6 +116,10 @@ body.home {
          justify-content: center;
          color: $color-grey-light-1;
 
+         @media only screen and (max-width: 320px) {
+            padding: 6rem 1.5rem;
+         }
+
          .core-values {
             position: relative;
             width: 100%;
@@ -120,7 +135,15 @@ body.home {
             }
 
             &-top {
-               width: 50%;
+               width: 60%;
+
+               @media only screen and (max-width: $bp-big) {
+                  width: 80%;
+               }
+
+               @media only screen and (max-width: $bp-small) {
+                  width: 100%;
+               }
 
                .tag {
                   color: $color-grey-light-1;
@@ -190,6 +213,11 @@ body.home {
                   display: flex;
                   gap: 3rem;
                   padding-bottom: 2.5rem;
+
+                  @media only screen and (max-width: $bp-small-extra) {
+                     gap: 1.5rem;
+                     ;
+                  }
 
                   &.border-bottom {
 

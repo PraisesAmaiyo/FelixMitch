@@ -67,7 +67,7 @@ var swiper = new Swiper('.mySwiper-2', {
     },
 
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     //  768: {
     //    slidesPerView: 2,
@@ -77,7 +77,7 @@ var swiper = new Swiper('.mySwiper-2', {
     //  },
   },
   autoplay: {
-    delay: 0,
+    delay: 2000,
     disableOnInteraction: false,
   },
   speed: 3000,
@@ -88,7 +88,11 @@ var swiper = new Swiper('.swiper-3', {
   spaceBetween: 15,
   freeMode: true,
   centeredSlides: true,
-  //   loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -101,6 +105,10 @@ var swiper = new Swiper('.swiper-4', {
   freeMode: true,
   centeredSlides: false,
   loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
   //   autoHeight: true,
   pagination: {
     el: '.swiper-pagination',
