@@ -13,6 +13,10 @@ body.home {
          height: max-content;
          position: relative;
 
+         @media only screen and (max-width:$bp-small) {
+            padding: 10rem 1.5rem;
+         }
+
          .services-page-background {
             background-image: url(../img/services/services-page-3.webp);
             background-position: center;
@@ -36,6 +40,12 @@ body.home {
 
             @media only screen and (min-width: $bp-monitor) {
                width: 160rem;
+            }
+
+
+            @media only screen and (max-width:$bp-big) {
+               padding-left: 0rem;
+               padding-right: 0rem;
             }
 
             .hero-text {
@@ -62,6 +72,16 @@ body.home {
             bottom: -13rem;
             right: 0;
             opacity: 0.5;
+
+            @media only screen and (max-width:$bp-big) {
+               font-size: 7rem;
+               bottom: -11rem;
+            }
+
+            @media only screen and (max-width: 290px) {
+               font-size: 5.5rem;
+               bottom: -10rem;
+            }
          }
 
          .line {
@@ -91,6 +111,14 @@ body.home {
          justify-content: center;
          color: $color-grey-dark-1;
 
+         @media only screen and (max-width:$bp-large) {
+            padding: 6rem 3rem;
+         }
+
+         @media only screen and (max-width:$bp-small) {
+            padding: 6rem 1.5rem;
+         }
+
          &_container {
             position: relative;
             // padding: 0 3rem;
@@ -106,6 +134,24 @@ body.home {
 
             @media only screen and (min-width: $bp-monitor) {
                width: 160rem;
+            }
+
+
+
+            @media only screen and (max-width:$bp-large) {
+               grid-template-columns: 100%;
+               grid-template-rows: auto;
+               gap: 7rem;
+
+
+               .container-left {
+                  order: 1
+               }
+
+               .container-right {
+                  order: 2
+               }
+
             }
 
             .heading-text {

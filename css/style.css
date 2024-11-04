@@ -11,6 +11,9 @@ html {
   @media only screen and (max-width: 50.3em) {
     html {
       font-size: 55%; } }
+  @media only screen and (max-width: 43.3em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -291,6 +294,10 @@ body.home {
       bottom: -13rem;
       right: 0;
       opacity: 0.5; }
+      @media only screen and (max-width: 50.3em) {
+        body.home .home-container .contact-hero .hero-aside {
+          font-size: 7rem;
+          bottom: -11rem; } }
     body.home .home-container .contact-hero .line {
       position: absolute;
       bottom: 0;
@@ -1806,6 +1813,10 @@ body.home {
       bottom: -13rem;
       right: 0;
       opacity: 0.5; }
+      @media only screen and (max-width: 50.3em) {
+        body.home .home-container .projects-hero .hero-aside {
+          font-size: 7rem;
+          bottom: -11rem; } }
     body.home .home-container .projects-hero .line {
       position: absolute;
       bottom: 0;
@@ -2126,6 +2137,10 @@ body.home {
     background-repeat: no-repeat;
     height: max-content;
     position: relative; }
+    @media only screen and (max-width: 30.5em) {
+      body.home .home-container .services-page-hero,
+      body.home .home-container .about-page-hero {
+        padding: 10rem 1.5rem; } }
     body.home .home-container .services-page-hero .services-page-background,
     body.home .home-container .about-page-hero .services-page-background {
       background-image: url(../img/services/services-page-3.webp);
@@ -2150,6 +2165,11 @@ body.home {
         body.home .home-container .services-page-hero_container,
         body.home .home-container .about-page-hero_container {
           width: 160rem; } }
+      @media only screen and (max-width: 50.3em) {
+        body.home .home-container .services-page-hero_container,
+        body.home .home-container .about-page-hero_container {
+          padding-left: 0rem;
+          padding-right: 0rem; } }
       body.home .home-container .services-page-hero_container .hero-text,
       body.home .home-container .about-page-hero_container .hero-text {
         position: relative;
@@ -2170,6 +2190,16 @@ body.home {
       bottom: -13rem;
       right: 0;
       opacity: 0.5; }
+      @media only screen and (max-width: 50.3em) {
+        body.home .home-container .services-page-hero .hero-aside,
+        body.home .home-container .about-page-hero .hero-aside {
+          font-size: 7rem;
+          bottom: -11rem; } }
+      @media only screen and (max-width: 290px) {
+        body.home .home-container .services-page-hero .hero-aside,
+        body.home .home-container .about-page-hero .hero-aside {
+          font-size: 5.5rem;
+          bottom: -10rem; } }
     body.home .home-container .services-page-hero .line,
     body.home .home-container .about-page-hero .line {
       position: absolute;
@@ -2193,6 +2223,20 @@ body.home {
     align-items: center;
     justify-content: center;
     color: #000; }
+    @media only screen and (max-width: 43.3em) {
+      body.home .home-container .services-page-about,
+      body.home .home-container .projects-about,
+      body.home .home-container .equipments-about,
+      body.home .home-container .about-page-about,
+      body.home .home-container .contact-about {
+        padding: 6rem 3rem; } }
+    @media only screen and (max-width: 30.5em) {
+      body.home .home-container .services-page-about,
+      body.home .home-container .projects-about,
+      body.home .home-container .equipments-about,
+      body.home .home-container .about-page-about,
+      body.home .home-container .contact-about {
+        padding: 6rem 1.5rem; } }
     body.home .home-container .services-page-about_container,
     body.home .home-container .projects-about_container,
     body.home .home-container .equipments-about_container,
@@ -2215,6 +2259,27 @@ body.home {
         body.home .home-container .about-page-about_container,
         body.home .home-container .contact-about_container {
           width: 160rem; } }
+      @media only screen and (max-width: 43.3em) {
+        body.home .home-container .services-page-about_container,
+        body.home .home-container .projects-about_container,
+        body.home .home-container .equipments-about_container,
+        body.home .home-container .about-page-about_container,
+        body.home .home-container .contact-about_container {
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          gap: 7rem; }
+          body.home .home-container .services-page-about_container .container-left,
+          body.home .home-container .projects-about_container .container-left,
+          body.home .home-container .equipments-about_container .container-left,
+          body.home .home-container .about-page-about_container .container-left,
+          body.home .home-container .contact-about_container .container-left {
+            order: 1; }
+          body.home .home-container .services-page-about_container .container-right,
+          body.home .home-container .projects-about_container .container-right,
+          body.home .home-container .equipments-about_container .container-right,
+          body.home .home-container .about-page-about_container .container-right,
+          body.home .home-container .contact-about_container .container-right {
+            order: 2; } }
       body.home .home-container .services-page-about_container .heading-text,
       body.home .home-container .projects-about_container .heading-text,
       body.home .home-container .equipments-about_container .heading-text,
@@ -2686,6 +2751,10 @@ body.home {
       bottom: -13rem;
       right: 0;
       opacity: 0.5; }
+      @media only screen and (max-width: 50.3em) {
+        body.home .home-container .equipments-hero .hero-aside {
+          font-size: 7rem;
+          bottom: -11rem; } }
     body.home .home-container .equipments-hero .line {
       position: absolute;
       bottom: 0;

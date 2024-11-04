@@ -61,6 +61,12 @@ body.home {
             bottom: -13rem;
             right: 0;
             opacity: 0.5;
+
+
+            @media only screen and (max-width:$bp-big) {
+               font-size: 7rem;
+               bottom: -11rem;
+            }
          }
 
          .line {
