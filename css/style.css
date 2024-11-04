@@ -592,7 +592,7 @@ body.home {
         body.home .home-container .section-trusted .trusted-right .brand-logo {
           max-width: 100%;
           object-fit: contain;
-          height: 6rem; }
+          height: 10rem; }
       body.home .home-container .section-trusted .trusted-left .trusted-image {
         width: 100%;
         height: 100%;
@@ -623,7 +623,7 @@ body.home {
           padding-left: 0;
           padding-right: 0; } }
       body.home .home-container .section-services .services-text {
-        color: #430708;
+        color: #000;
         display: grid;
         grid-template-columns: 42% 55%;
         align-items: center;
@@ -829,7 +829,7 @@ body.home {
     color: #fff;
     background-color: #010101; }
     body.home .home-container .section-values .background-overlay {
-      background-image: url(../img/main-img-2.jpg);
+      background-image: url(../img/main-img-2.webp);
       background-attachment: fixed;
       background-position: 50% 90%;
       background-size: cover;
@@ -1508,7 +1508,7 @@ body.home {
     height: max-content;
     position: relative; }
     body.home .home-container .section-cta-background {
-      background-image: url(../img/felixmitch-img-6.jpg);
+      background-image: url(../img/felixmitch-img-6.webp);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1568,7 +1568,7 @@ body.home {
   body.home .home-container .section-footer {
     padding: 3rem 3rem;
     background-color: #ffe3d5;
-    background-image: url(../img/footer-bg.jpg);
+    background-image: url(../img/footer-bg.webp);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -1769,7 +1769,7 @@ body.home {
     height: max-content;
     position: relative; }
     body.home .home-container .projects-hero .projects-background {
-      background-image: url(../img/projects/projects-bg.jpeg);
+      background-image: url(../img/projects/projects-bg.webp);
       background-position: 50% 80%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1927,7 +1927,7 @@ body.home {
     color: #fff;
     background-color: #010101; }
     body.home .home-container .section-project_values .background-overlay {
-      background-image: url(../img/projects/projects-overlay.jpeg);
+      background-image: url(../img/projects/projects-overlay.webp);
       background-attachment: fixed;
       background-position: 40% 45%;
       background-size: cover;
@@ -2128,7 +2128,7 @@ body.home {
     position: relative; }
     body.home .home-container .services-page-hero .services-page-background,
     body.home .home-container .about-page-hero .services-page-background {
-      background-image: url(../img/services/services-page-3.jpg);
+      background-image: url(../img/services/services-page-3.webp);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -2235,7 +2235,7 @@ body.home {
   body.home .home-container .services-page-stats,
   body.home .home-container .about-page-stats {
     background-color: #f2f7fd;
-    background-image: url(../img/services/services-page-3.jpg);
+    background-image: url(../img/services/services-page-3.webp);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 35vw auto;
@@ -2349,7 +2349,7 @@ body.home {
       left: 0;
       opacity: 0.4; }
       body.home .home-container .single-service-hero .single-service-background.oil-spill {
-        background-image: url(../img/services/oil-spill/oilspill-hero.jpeg); }
+        background-image: url(../img/services/oil-spill/oilspill-hero.webp); }
       body.home .home-container .single-service-hero .single-service-background.well-completion {
         background-image: url(../img/services/well-completion/well-completion-bg.webp); }
       body.home .home-container .single-service-hero .single-service-background.pipeline-maintenance {
@@ -2366,7 +2366,7 @@ body.home {
         background-image: url(../img/services/civil-construction/civil-bg.webp);
         background-position: 20% 75%; }
       body.home .home-container .single-service-hero .single-service-background.oil-tools-procurement {
-        background-image: url(../img/services/oil-tools-procurement/oil-tools-bg.jpeg);
+        background-image: url(../img/services/oil-tools-procurement/oil-tools-bg);
         background-position: 20% 75%; }
       body.home .home-container .single-service-hero .single-service-background.manpower-supply {
         background-image: url(../img/services/manpower-supply/manpower-supply-bg.webp);
@@ -2649,7 +2649,7 @@ body.home {
     height: max-content;
     position: relative; }
     body.home .home-container .equipments-hero .equipments-background {
-      background-image: url(../img/equipments/equipments-bg-2.jpg);
+      background-image: url(../img/equipments/equipments-bg-2.webp);
       background-position: 50% 80%;
       background-size: cover;
       background-repeat: no-repeat;

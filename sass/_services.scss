@@ -14,7 +14,7 @@ body.home {
          position: relative;
 
          .services-page-background {
-            background-image: url(../img/services/services-page-3.jpg);
+            background-image: url(../img/services/services-page-3.webp);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -129,7 +129,7 @@ body.home {
       .services-page-stats,
       .about-page-stats {
          background-color: $color-secondary-50;
-         background-image: url(../img/services/services-page-3.jpg);
+         background-image: url(../img/services/services-page-3.webp);
          background-position: top left;
          background-repeat: no-repeat;
          background-size: 35vw auto;
@@ -274,7 +274,7 @@ body.home {
             opacity: 0.4;
 
             &.oil-spill {
-               background-image: url(../img/services/oil-spill/oilspill-hero.jpeg);
+               background-image: url(../img/services/oil-spill/oilspill-hero.webp);
             }
 
             &.well-completion {
@@ -305,7 +305,7 @@ body.home {
             }
 
             &.oil-tools-procurement {
-               background-image: url(../img/services/oil-tools-procurement/oil-tools-bg.jpeg);
+               background-image: url(../img/services/oil-tools-procurement/oil-tools-bg);
                background-position: 20% 75%;
             }
 

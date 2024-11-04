@@ -17,10 +17,10 @@ var swiper = new Swiper('.mySwiper', {
   //     rows: 2,
   //   },
   loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
+  //   autoplay: {
+  //     delay: 0,
+  //     disableOnInteraction: false,
+  //   },
   speed: 3000,
   pagination: {
     el: '.swiper-pagination',
