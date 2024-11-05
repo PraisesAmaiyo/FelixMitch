@@ -867,7 +867,6 @@ body.home {
     background-color: #010101; }
     body.home .home-container .section-values .background-overlay {
       background-image: url(../img/main-img-2.webp);
-      background-attachment: fixed;
       background-position: 50% 90%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -878,6 +877,9 @@ body.home {
       position: absolute;
       top: 0;
       left: 0; }
+      @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+        body.home .home-container .section-values .background-overlay {
+          background-attachment: fixed; } }
     body.home .home-container .section-values .values {
       padding: 0 3rem;
       width: 100%;
@@ -1975,7 +1977,6 @@ body.home {
     background-color: #010101; }
     body.home .home-container .section-project_values .background-overlay {
       background-image: url(../img/projects/projects-overlay.webp);
-      background-attachment: fixed;
       background-position: 40% 45%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1986,6 +1987,9 @@ body.home {
       position: absolute;
       top: 0;
       left: 0; }
+      @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+        body.home .home-container .section-project_values .background-overlay {
+          background-attachment: fixed; } }
     body.home .home-container .section-project_values .project-values {
       padding: 0 3rem;
       width: 75%;

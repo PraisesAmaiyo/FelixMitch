@@ -18,7 +18,7 @@ var swiper = new Swiper('.mySwiper', {
   //   },
   loop: true,
   autoplay: {
-    delay: 0,
+    delay: 2000,
     disableOnInteraction: false,
   },
   speed: 3000,
@@ -89,9 +89,10 @@ var swiper = new Swiper('.swiper-3', {
   freeMode: true,
   centeredSlides: true,
   autoplay: {
-    delay: 0,
+    delay: 2000,
     disableOnInteraction: false,
   },
+  speed: 3000,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -106,9 +107,10 @@ var swiper = new Swiper('.swiper-4', {
   centeredSlides: false,
   loop: true,
   autoplay: {
-    delay: 0,
+    delay: 2000,
     disableOnInteraction: false,
   },
+  speed: 3000,
   //   autoHeight: true,
   pagination: {
     el: '.swiper-pagination',
