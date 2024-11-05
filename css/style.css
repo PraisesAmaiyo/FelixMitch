@@ -454,1295 +454,1297 @@ body.home {
 
 body.home {
   overflow-x: hidden; }
-  body.home .home-container .section-hero {
-    position: relative;
-    background-image: linear-gradient(180deg, #000, 0%, #0101014A 15%);
-    background-color: transparent;
-    opacity: 0.9;
-    height: 90rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff; }
-    body.home .home-container .section-hero .hero-slideshow {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1; }
-    body.home .home-container .section-hero .slideshow-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-      animation: zoom 6s ease-in-out infinite; }
-    body.home .home-container .section-hero .slideshow-image.active {
-      opacity: 1; }
+  body.home .home-container {
+    overflow-x: hidden; }
+    body.home .home-container .section-hero {
+      position: relative;
+      background-image: linear-gradient(180deg, #000, 0%, #0101014A 15%);
+      background-color: transparent;
+      opacity: 0.9;
+      height: 90rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff; }
+      body.home .home-container .section-hero .hero-slideshow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; }
+      body.home .home-container .section-hero .slideshow-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        animation: zoom 6s ease-in-out infinite; }
+      body.home .home-container .section-hero .slideshow-image.active {
+        opacity: 1; }
 
 @keyframes zoom {
   0% {
     transform: scale(1); }
   100% {
     transform: scale(1.1); } }
-    body.home .home-container .section-hero .hero {
-      width: 100%;
-      height: 100%;
-      margin: auto 0;
-      gap: 1.5rem;
-      align-items: center;
-      justify-content: center;
-      display: grid;
-      grid-template-columns: 60% 40%;
-      position: relative;
-      z-index: 1; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-hero .hero {
-          width: 160rem; } }
-      @media only screen and (max-width: 62.5em) {
-        body.home .home-container .section-hero .hero {
-          grid-template-columns: 70% 30%; } }
-      @media only screen and (max-width: 50.3em) {
-        body.home .home-container .section-hero .hero {
-          grid-template-columns: 85% 15%; } }
-      @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-hero .hero {
-          grid-template-columns: 100% 0%; } }
-      body.home .home-container .section-hero .hero-text {
-        padding-left: 3rem; }
-      body.home .home-container .section-hero .hero-btn {
-        margin-top: 2rem; }
-    body.home .home-container .section-hero .hero-bottom {
-      display: flex;
-      padding-top: 1rem;
-      width: 90%;
-      height: 9rem; }
-      body.home .home-container .section-hero .hero-bottom_textbox {
-        border-top: 1px solid #fff3ed;
-        padding: 1rem 1rem;
-        margin-bottom: -10rem;
-        transition: all 0.3s ease;
-        display: flex;
+      body.home .home-container .section-hero .hero {
+        width: 100%;
+        height: 100%;
+        margin: auto 0;
         gap: 1.5rem;
-        backdrop-filter: blur(2px); }
-        body.home .home-container .section-hero .hero-bottom_textbox:hover {
-          background-color: rgba(67, 7, 8, 0.6); }
-        body.home .home-container .section-hero .hero-bottom_textbox .textbox-icon {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 2rem;
-          width: 4rem;
-          height: 4rem;
-          background-color: #eb230b;
-          border-radius: 50%; }
-          body.home .home-container .section-hero .hero-bottom_textbox .textbox-icon .icon {
-            font-size: 2rem; }
-        body.home .home-container .section-hero .hero-bottom_textbox:hover {
-          transform: translateY(-10rem); }
-        body.home .home-container .section-hero .hero-bottom_textbox .textbox-heading {
-          font-size: 1.7rem; }
-        body.home .home-container .section-hero .hero-bottom_textbox .textbox-minitext {
-          font-weight: 500;
-          font-size: 1.3rem; }
-  body.home .home-container .section-trusted {
-    background-color: #2a2f35;
-    padding: 8rem 3rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff; }
-    body.home .home-container .section-trusted .trusted {
-      position: relative;
-      width: 100%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 56% 40%;
-      gap: 4%;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      z-index: 1; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-trusted .trusted {
-          width: 160rem; } }
-      @media only screen and (max-width: 43.3em) {
-        body.home .home-container .section-trusted .trusted {
-          grid-template-columns: 100%;
-          grid-template-rows: auto; } }
-      body.home .home-container .section-trusted .trusted .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url(../img/world-overlay.png);
-        height: 100%;
-        width: 100%;
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        opacity: 0.4;
-        z-index: -1; }
-      body.home .home-container .section-trusted .trusted-right {
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem; }
-        body.home .home-container .section-trusted .trusted-right .heading-text {
-          font-size: 4rem; }
-          @media only screen and (max-width: 43.3em) {
-            body.home .home-container .section-trusted .trusted-right .heading-text {
-              font-size: 3.5rem; } }
-        body.home .home-container .section-trusted .trusted-right .heading-subtext {
-          font-size: 2rem; }
-          @media only screen and (max-width: 43.3em) {
-            body.home .home-container .section-trusted .trusted-right .heading-subtext {
-              font-size: 1.7rem; } }
-        body.home .home-container .section-trusted .trusted-right .trusted-brands {
-          overflow: hidden;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          padding: 2rem 0; }
-        body.home .home-container .section-trusted .trusted-right .swiper {
-          width: 100%;
-          height: auto;
-          margin-left: auto;
-          margin-right: auto; }
-        body.home .home-container .section-trusted .trusted-right .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: grab;
-          height: 100px;
-          cursor: grab; }
-          body.home .home-container .section-trusted .trusted-right .swiper-slide:active {
-            cursor: grabbing; }
-        body.home .home-container .section-trusted .trusted-right .brand-logo {
-          max-width: 100%;
-          object-fit: contain;
-          height: 10rem; }
-      body.home .home-container .section-trusted .trusted-left .trusted-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        border-radius: 2px 2px 2px 2px;
-        box-shadow: 20px 20px 0px 0px #fc653c; }
-  body.home .home-container .section-services {
-    padding: 8rem 3rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color: #fff; }
-    body.home .home-container .section-services .services {
-      padding: 0 3rem;
-      width: 100%;
-      margin: 0 auto;
-      height: 100%;
-      z-index: 1; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-services .services {
-          width: 160rem; } }
-      @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-services .services {
-          padding: 0; } }
-      body.home .home-container .section-services .services-text {
-        color: #000;
-        display: grid;
-        grid-template-columns: 42% 55%;
-        align-items: center;
-        gap: 3%;
-        margin-bottom: 2rem; }
-        @media only screen and (max-width: 35.6em) {
-          body.home .home-container .section-services .services-text {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, max-content);
-            gap: 2rem; } }
-        body.home .home-container .section-services .services-text .line {
-          height: 3px;
-          width: 7rem;
-          background-color: #fa3d15;
-          content: '';
-          display: block;
-          margin-top: 1.3rem; }
-      body.home .home-container .section-services .services-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-        gap: 3rem;
-        padding: 2rem 0;
-        width: 100%; }
-        @media only screen and (min-width: 100em) {
-          body.home .home-container .section-services .services-container {
-            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); } }
-        @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-          body.home .home-container .section-services .services-container {
-            grid-template-columns: repeat(3, 1fr); } }
-        body.home .home-container .section-services .services-container_box {
-          position: relative;
-          background-color: #eff0ef;
-          border-radius: 5px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          padding: 1.5rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          color: #430708;
-          transition: box-shadow 0.3s ease; }
-          body.home .home-container .section-services .services-container_box:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
-          body.home .home-container .section-services .services-container_box.active {
-            background-color: #eb230b;
-            color: #fff3ed; }
-            body.home .home-container .section-services .services-container_box.active a {
-              color: inherit; }
-              body.home .home-container .section-services .services-container_box.active a:hover {
-                text-decoration: none; }
-            body.home .home-container .section-services .services-container_box.active .box-redirection {
-              background-color: #430708;
-              transition: background-color .3s ease; }
-              body.home .home-container .section-services .services-container_box.active .box-redirection:hover {
-                background-color: #fa3d15; }
-            body.home .home-container .section-services .services-container_box.active .box-info_icon {
-              border: 1px dashed #fff;
-              color: #fff; }
-              body.home .home-container .section-services .services-container_box.active .box-info_icon:hover {
-                background-color: #fff;
-                color: #eb230b; }
-            body.home .home-container .section-services .services-container_box.active .heading-subtext {
-              color: #fff; }
-            body.home .home-container .section-services .services-container_box.active .heading-minitext {
-              color: #fff; }
-          body.home .home-container .section-services .services-container_box a {
-            color: inherit; }
-            body.home .home-container .section-services .services-container_box a:hover {
-              text-decoration: none; }
-          body.home .home-container .section-services .services-container_box .box-redirection {
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 5.5rem;
-            width: 5.5rem;
-            padding: 1rem;
-            background-color: #eb230b;
-            border-width: 0 0px .7rem .7rem;
-            border-style: solid;
-            border-color: #fff;
-            border-radius: 3px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color .3s ease; }
-            body.home .home-container .section-services .services-container_box .box-redirection:hover {
-              background-color: #430708; }
-            body.home .home-container .section-services .services-container_box .box-redirection .redirection-icon {
-              font-size: 2.5rem;
-              rotate: 45deg;
-              color: #fff; }
-          body.home .home-container .section-services .services-container_box .box-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem; }
-            body.home .home-container .section-services .services-container_box .box-info_icon {
-              height: 7rem;
-              width: 5.5rem;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 1rem;
-              font-size: 3rem;
-              background-color: transparent;
-              border: 1px dashed #eb230b;
-              color: #eb230b;
-              border-radius: 3px; }
-              body.home .home-container .section-services .services-container_box .box-info_icon:hover {
-                background-color: #eb230b;
-                color: #fff; }
-          body.home .home-container .section-services .services-container_box .heading-subtext {
-            color: #000;
-            font-weight: 600;
-            display: block; }
-          body.home .home-container .section-services .services-container_box .heading-minitext {
-            color: #000; }
-  body.home .home-container .section-statistics {
-    padding: 0rem 3rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff; }
-    body.home .home-container .section-statistics .statistics {
-      padding: 5rem 3rem 8rem 3rem;
-      width: 90%;
-      margin: 0 auto;
-      height: 100%;
-      z-index: 1; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-statistics .statistics {
-          max-width: 120rem; } }
-      @media only screen and (max-width: 43.3em) {
-        body.home .home-container .section-statistics .statistics {
-          width: 100%; } }
-      @media only screen and (max-width: 35.6em) {
-        body.home .home-container .section-statistics .statistics {
-          padding-left: 0;
-          padding-right: 0; } }
-      body.home .home-container .section-statistics .statistics-top {
-        margin-bottom: 3.5rem; }
-        body.home .home-container .section-statistics .statistics-top .tag {
-          text-align: center; }
-          @media only screen and (max-width: 35.6em) {
-            body.home .home-container .section-statistics .statistics-top .tag {
-              text-align: left; } }
-        body.home .home-container .section-statistics .statistics-top .heading-midtext {
-          text-align: center;
-          margin-bottom: 1.5rem; }
-          @media only screen and (max-width: 35.6em) {
-            body.home .home-container .section-statistics .statistics-top .heading-midtext {
-              text-align: left; } }
-        body.home .home-container .section-statistics .statistics-top .heading-minitext {
-          margin-bottom: 1rem; }
-      body.home .home-container .section-statistics .statistics-bottom {
-        background-color: #e3eefb;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 3rem; }
-        @media only screen and (max-width: 30.5em) {
-          body.home .home-container .section-statistics .statistics-bottom {
-            flex-direction: column;
-            gap: 3rem;
-            align-items: center; } }
-        body.home .home-container .section-statistics .statistics-bottom .stats {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          width: 100%;
-          justify-content: center; }
-          @media only screen and (max-width: 30.5em) {
-            body.home .home-container .section-statistics .statistics-bottom .stats {
-              padding: 1rem .2rem; } }
-          body.home .home-container .section-statistics .statistics-bottom .stats-icon {
-            font-size: 5rem;
-            color: #fa3d15; }
-          body.home .home-container .section-statistics .statistics-bottom .stats-text {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; }
-            body.home .home-container .section-statistics .statistics-bottom .stats-text_number {
-              font-size: 3rem;
-              font-weight: 500;
-              display: flex;
-              align-items: center;
-              gap: .2rem; }
-              body.home .home-container .section-statistics .statistics-bottom .stats-text_number span {
-                font-size: 1.5rem; }
-            body.home .home-container .section-statistics .statistics-bottom .stats-text .heading-mini {
-              color: #fa3d15;
-              font-weight: 600; }
-  body.home .home-container .section-values {
-    padding: 8rem 3rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #430708;
-    color: #fff;
-    background-color: #010101; }
-    body.home .home-container .section-values .background-overlay {
-      background-image: url(../img/main-img-2.webp);
-      background-position: 50% 90%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.4;
-      transition: background .3s;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-      @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-        body.home .home-container .section-values .background-overlay {
-          background-attachment: fixed; } }
-    body.home .home-container .section-values .values {
-      padding: 0 3rem;
-      width: 100%;
-      margin: 0 auto;
-      height: 100%;
-      z-index: 1;
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(2, 48%);
-      gap: 4%;
-      align-items: center; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-values .values {
-          width: 160rem; } }
-      @media only screen and (max-width: 50.3em) {
-        body.home .home-container .section-values .values {
-          padding: 0; } }
-      @media only screen and (max-width: 43.3em) {
-        body.home .home-container .section-values .values {
-          grid-template-columns: 100%;
-          grid-template-rows: repeat(2, max-content);
-          gap: 5rem; } }
-      body.home .home-container .section-values .values-left {
-        display: flex;
-        flex-direction: column; }
-        body.home .home-container .section-values .values-left .heading-midtext {
-          width: 70%; }
-        body.home .home-container .section-values .values-left .tag {
-          color: #fff3ed;
-          margin-bottom: 2rem; }
-      body.home .home-container .section-values .values-right {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem; }
-        body.home .home-container .section-values .values-right .statement {
-          display: flex;
-          gap: 2rem; }
-          body.home .home-container .section-values .values-right .statement-icon {
-            background-color: #fa3d15;
-            height: 1em;
-            width: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-            font-size: 1.5rem;
-            border-radius: 50px; }
-          body.home .home-container .section-values .values-right .statement-text_heading {
-            font-size: 2.2rem; }
-  body.home .home-container .section-featured-projects,
-  body.home .home-container .section-featured-equipments {
-    padding: 8rem 3rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    background-color: #fff; }
-    body.home .home-container .section-featured-projects .featured-projects,
-    body.home .home-container .section-featured-projects .featured-equipments,
-    body.home .home-container .section-featured-equipments .featured-projects,
-    body.home .home-container .section-featured-equipments .featured-equipments {
-      padding: 0 3rem;
-      width: 100%;
-      margin: 0 auto;
-      height: 100%;
-      z-index: 1; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-featured-projects .featured-projects,
-        body.home .home-container .section-featured-projects .featured-equipments,
-        body.home .home-container .section-featured-equipments .featured-projects,
-        body.home .home-container .section-featured-equipments .featured-equipments {
-          width: 160rem; } }
-      @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-featured-projects .featured-projects,
-        body.home .home-container .section-featured-projects .featured-equipments,
-        body.home .home-container .section-featured-equipments .featured-projects,
-        body.home .home-container .section-featured-equipments .featured-equipments {
-          padding: 0; } }
-      body.home .home-container .section-featured-projects .featured-projects-text,
-      body.home .home-container .section-featured-projects .featured-equipments-text,
-      body.home .home-container .section-featured-equipments .featured-projects-text,
-      body.home .home-container .section-featured-equipments .featured-equipments-text {
-        color: #000;
-        display: grid;
-        grid-template-columns: 42% 55%;
-        align-items: center;
-        gap: 3%;
-        margin-bottom: 5rem; }
-        @media only screen and (max-width: 35.6em) {
-          body.home .home-container .section-featured-projects .featured-projects-text,
-          body.home .home-container .section-featured-projects .featured-equipments-text,
-          body.home .home-container .section-featured-equipments .featured-projects-text,
-          body.home .home-container .section-featured-equipments .featured-equipments-text {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, max-content);
-            gap: 2rem; } }
-        body.home .home-container .section-featured-projects .featured-projects-text .heading-minitext,
-        body.home .home-container .section-featured-projects .featured-equipments-text .heading-minitext,
-        body.home .home-container .section-featured-equipments .featured-projects-text .heading-minitext,
-        body.home .home-container .section-featured-equipments .featured-equipments-text .heading-minitext {
-          margin-bottom: 3rem; }
-        body.home .home-container .section-featured-projects .featured-projects-text .line,
-        body.home .home-container .section-featured-projects .featured-equipments-text .line,
-        body.home .home-container .section-featured-equipments .featured-projects-text .line,
-        body.home .home-container .section-featured-equipments .featured-equipments-text .line {
-          height: 3px;
-          width: 7rem;
-          background-color: #fa3d15;
-          content: '';
-          display: block;
-          margin-top: 1.3rem; }
-      body.home .home-container .section-featured-projects .featured-projects .swiper,
-      body.home .home-container .section-featured-projects .featured-equipments .swiper,
-      body.home .home-container .section-featured-equipments .featured-projects .swiper,
-      body.home .home-container .section-featured-equipments .featured-equipments .swiper {
-        width: 100%;
-        height: 30rem; }
-        @media only screen and (min-width: 100em) {
-          body.home .home-container .section-featured-projects .featured-projects .swiper,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper {
-            height: 40rem; } }
-        @media only screen and (max-width: 43.3em) {
-          body.home .home-container .section-featured-projects .featured-projects .swiper,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper {
-            height: 35rem; } }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-slide,
-      body.home .home-container .section-featured-projects .featured-equipments .swiper-slide,
-      body.home .home-container .section-featured-equipments .featured-projects .swiper-slide,
-      body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide {
-        position: relative;
-        overflow: hidden;
-        display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #000;
-        cursor: grab; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:active,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:active,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:active,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:active {
-          cursor: grabbing; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide {
-          position: relative;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        position: relative;
+        z-index: 1; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-hero .hero {
+            width: 160rem; } }
+        @media only screen and (max-width: 62.5em) {
+          body.home .home-container .section-hero .hero {
+            grid-template-columns: 70% 30%; } }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-hero .hero {
+            grid-template-columns: 85% 15%; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-hero .hero {
+            grid-template-columns: 100% 0%; } }
+        body.home .home-container .section-hero .hero-text {
+          padding-left: 3rem; }
+        body.home .home-container .section-hero .hero-btn {
+          margin-top: 2rem; }
+      body.home .home-container .section-hero .hero-bottom {
+        display: flex;
+        padding-top: 1rem;
+        width: 90%;
+        height: 9rem; }
+        body.home .home-container .section-hero .hero-bottom_textbox {
+          border-top: 1px solid #fff3ed;
+          padding: 1rem 1rem;
+          margin-bottom: -10rem;
+          transition: all 0.3s ease;
+          display: flex;
+          gap: 1.5rem;
+          backdrop-filter: blur(2px); }
+          body.home .home-container .section-hero .hero-bottom_textbox:hover {
+            background-color: rgba(67, 7, 8, 0.6); }
+          body.home .home-container .section-hero .hero-bottom_textbox .textbox-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            width: 4rem;
+            height: 4rem;
+            background-color: #eb230b;
+            border-radius: 50%; }
+            body.home .home-container .section-hero .hero-bottom_textbox .textbox-icon .icon {
+              font-size: 2rem; }
+          body.home .home-container .section-hero .hero-bottom_textbox:hover {
+            transform: translateY(-10rem); }
+          body.home .home-container .section-hero .hero-bottom_textbox .textbox-heading {
+            font-size: 1.7rem; }
+          body.home .home-container .section-hero .hero-bottom_textbox .textbox-minitext {
+            font-weight: 500;
+            font-size: 1.3rem; }
+    body.home .home-container .section-trusted {
+      background-color: #2a2f35;
+      padding: 8rem 3rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff; }
+      body.home .home-container .section-trusted .trusted {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 56% 40%;
+        gap: 4%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        z-index: 1; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-trusted .trusted {
+            width: 160rem; } }
+        @media only screen and (max-width: 43.3em) {
+          body.home .home-container .section-trusted .trusted {
+            grid-template-columns: 100%;
+            grid-template-rows: auto; } }
+        body.home .home-container .section-trusted .trusted .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url(../img/world-overlay.png);
           height: 100%;
           width: 100%;
+          background-position: center center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          opacity: 0.4;
+          z-index: -1; }
+        body.home .home-container .section-trusted .trusted-right {
           display: flex;
-          align-items: center;
-          justify-content: center; }
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide_overlay,
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide_overlay,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide_overlay,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide_overlay,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide_overlay,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide_overlay,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide_overlay,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide_overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
+          flex-direction: column;
+          gap: 2.5rem; }
+          body.home .home-container .section-trusted .trusted-right .heading-text {
+            font-size: 4rem; }
+            @media only screen and (max-width: 43.3em) {
+              body.home .home-container .section-trusted .trusted-right .heading-text {
+                font-size: 3.5rem; } }
+          body.home .home-container .section-trusted .trusted-right .heading-subtext {
+            font-size: 2rem; }
+            @media only screen and (max-width: 43.3em) {
+              body.home .home-container .section-trusted .trusted-right .heading-subtext {
+                font-size: 1.7rem; } }
+          body.home .home-container .section-trusted .trusted-right .trusted-brands {
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            background-size: cover;
-            background-position: center;
-            transition: opacity 0.3s ease;
-            z-index: 1; }
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content,
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content,
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content,
-          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content,
-          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content,
-          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content,
-          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content {
-            position: absolute;
-            bottom: 0;
+            padding: 2rem 0; }
+          body.home .home-container .section-trusted .trusted-right .swiper {
             width: 100%;
-            color: #fff;
-            opacity: 0;
-            z-index: 2;
-            transition: opacity 0.3s ease; }
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
-            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper {
-              padding: 2rem;
-              display: flex;
-              justify-content: center;
-              flex-direction: column; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag {
-                font-size: 1rem;
-                margin-bottom: .7em;
-                color: #fff; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a {
-                text-decoration: none;
-                color: #fff;
-                cursor: pointer; }
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover {
-                  cursor: pointer;
-                  color: #fc653c; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext {
-                font-size: 2.2rem;
-                font-weight: 700; }
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
-              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link {
-                display: flex;
-                padding-top: 1.2rem;
-                border-top: 1px solid rgba(255, 255, 255, 0.6); }
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
-                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon {
-                  font-size: 1rem;
-                  rotate: 45deg;
-                  color: #fff; }
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
-                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover {
-                    color: #fc653c; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-slide_overlay,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .equipment-slide_overlay,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .project-slide_overlay,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .equipment-slide_overlay,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .project-slide_overlay,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .equipment-slide_overlay,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .project-slide_overlay,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .equipment-slide_overlay {
+            height: auto;
+            margin-left: auto;
+            margin-right: auto; }
+          body.home .home-container .section-trusted .trusted-right .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: grab;
+            height: 100px;
+            cursor: grab; }
+            body.home .home-container .section-trusted .trusted-right .swiper-slide:active {
+              cursor: grabbing; }
+          body.home .home-container .section-trusted .trusted-right .brand-logo {
+            max-width: 100%;
+            object-fit: contain;
+            height: 10rem; }
+        body.home .home-container .section-trusted .trusted-left .trusted-image {
+          width: 100%;
+          height: 100%;
           object-fit: cover;
-          opacity: 0.3; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-content,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .equipment-content,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .project-content,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .equipment-content,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .project-content,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .equipment-content,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .project-content,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .equipment-content {
-          opacity: 1; }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-next,
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev,
-      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next,
-      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev,
-      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next,
-      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev,
-      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next,
-      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev {
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 3rem; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-button-next::after,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev::after,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next::after,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev::after,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next::after,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev::after,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next::after,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev::after {
-          font-size: 3rem; }
-        body.home .home-container .section-featured-projects .featured-projects .swiper-button-next:hover,
-        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev:hover,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next:hover,
-        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev:hover,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next:hover,
-        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev:hover,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next:hover,
-        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev:hover {
-          background-color: rgba(0, 0, 0, 0.9); }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-next,
-      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next,
-      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next,
-      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next {
-        right: 10px; }
-      body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev,
-      body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev,
-      body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev,
-      body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev {
-        left: 10px; }
-  body.home .home-container .section-testimonial {
-    padding: 8rem 3rem;
-    background-image: url(../img/testimonial-clients/testimonial-bg.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: max-content;
-    color: #fff; }
-    @media only screen and (max-width: 62.5em) {
-      body.home .home-container .section-testimonial {
-        padding: 2rem 1.5rem; } }
-    @media only screen and (max-width: 38.6em) {
-      body.home .home-container .section-testimonial {
-        padding: 2rem 1.5rem 5rem 1.5rem; } }
-    body.home .home-container .section-testimonial .testimonial-container {
-      width: 100%;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      gap: 2rem;
-      justify-content: center;
-      align-items: center; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-testimonial .testimonial-container {
-          width: 160rem; } }
-      @media only screen and (max-width: 50.3em) {
-        body.home .home-container .section-testimonial .testimonial-container {
-          padding: 0rem;
-          gap: 1rem; } }
-      @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-testimonial .testimonial-container {
-          grid-template-columns: 1fr;
-          grid-template-rows: repeat(2, min-content);
-          gap: 2rem; } }
-    body.home .home-container .section-testimonial__texts {
-      padding: 0 2rem; }
-      @media only screen and (max-width: 62.5em) {
-        body.home .home-container .section-testimonial__texts {
-          padding: 0 1rem;
-          padding-right: 0; } }
-      @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-testimonial__texts {
-          text-align: left;
-          padding: 3rem 0 1rem 0; } }
-      body.home .home-container .section-testimonial__texts .quote-image {
-        height: 8rem;
-        margin-bottom: 4rem; }
-      body.home .home-container .section-testimonial__texts .tag {
-        color: #fff;
-        margin-bottom: 3rem; }
-      body.home .home-container .section-testimonial__texts .testimonial-heading {
-        font-size: 3.7rem;
-        font-weight: 700;
-        margin-bottom: 2rem; }
-        @media only screen and (max-width: 62.5em) {
-          body.home .home-container .section-testimonial__texts .testimonial-heading {
-            font-size: 2.7rem; } }
-      body.home .home-container .section-testimonial__texts .testimonial-subtext {
-        font-size: 1.5rem;
-        font-weight: 400; }
-        @media only screen and (max-width: 35.6em) {
-          body.home .home-container .section-testimonial__texts .testimonial-subtext {
-            font-size: 1.7rem; } }
-    body.home .home-container .section-testimonial div.swiper-3 {
-      margin: 2.5rem auto;
-      width: 100%;
-      height: auto;
-      padding: 0 4rem 6rem 4rem;
+          object-position: center center;
+          border-radius: 2px 2px 2px 2px;
+          box-shadow: 20px 20px 0px 0px #fc653c; }
+    body.home .home-container .section-services {
+      padding: 8rem 3rem;
       position: relative;
-      padding-bottom: 4rem;
-      overflow: hidden; }
-      @media only screen and (max-width: 62.5em) {
-        body.home .home-container .section-testimonial div.swiper-3 {
-          padding: 0 2rem 6rem 2rem; } }
-      body.home .home-container .section-testimonial div.swiper-3 .testimonial-item {
-        text-align: center;
-        border: 0.1rem solid var(--grey);
-        border-radius: 0.5rem;
-        padding: 4rem 2rem;
-        height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #fff; }
+      body.home .home-container .section-services .services {
+        padding: 0 3rem;
         width: 100%;
-        background-color: #fff;
-        position: relative;
-        overflow: hidden;
-        color: #000;
-        cursor: grab; }
-        body.home .home-container .section-testimonial div.swiper-3 .testimonial-item:active {
-          cursor: grabbing; }
-        body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .quote {
-          position: absolute;
-          top: -100px;
-          right: 0;
-          font-size: 30rem;
-          color: rgba(250, 61, 21, 0.09);
-          z-index: -100; }
-        body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-comment {
-          color: var(--grey);
-          font-size: 1.3rem;
-          line-height: 1.5;
-          font-style: italic;
-          text-align: left; }
-        body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info {
-          display: flex;
-          gap: 2rem;
+        margin: 0 auto;
+        height: 100%;
+        z-index: 1; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-services .services {
+            width: 160rem; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-services .services {
+            padding: 0; } }
+        body.home .home-container .section-services .services-text {
+          color: #000;
+          display: grid;
+          grid-template-columns: 42% 55%;
           align-items: center;
-          margin-top: 2.2rem; }
-          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info .client-image {
-            height: 7rem;
+          gap: 3%;
+          margin-bottom: 2rem; }
+          @media only screen and (max-width: 35.6em) {
+            body.home .home-container .section-services .services-text {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(2, max-content);
+              gap: 2rem; } }
+          body.home .home-container .section-services .services-text .line {
+            height: 3px;
             width: 7rem;
-            border-radius: 50%;
-            border: 0.5rem solid var(--white); }
-          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info_basic {
+            background-color: #fa3d15;
+            content: '';
+            display: block;
+            margin-top: 1.3rem; }
+        body.home .home-container .section-services .services-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+          gap: 3rem;
+          padding: 2rem 0;
+          width: 100%; }
+          @media only screen and (min-width: 100em) {
+            body.home .home-container .section-services .services-container {
+              grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); } }
+          @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+            body.home .home-container .section-services .services-container {
+              grid-template-columns: repeat(3, 1fr); } }
+          body.home .home-container .section-services .services-container_box {
+            position: relative;
+            background-color: #eff0ef;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
-            gap: .2rem; }
-            body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info_basic .client-name {
-              font-size: 1.5rem; }
-            body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info_basic .tag {
-              margin-bottom: 0;
-              font-size: 1.2rem; }
-        body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination {
-          bottom: 0; }
-          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination .swiper-pagination-bullet {
-            background: #fc653c; }
-          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination .swiper-pagination-bullet-active {
-            background: #eb230b; }
-  body.home .home-container .section-cta {
-    padding: 10rem 3rem;
-    background-color: #2a2f35;
-    background-repeat: no-repeat;
-    height: max-content;
-    position: relative; }
-    body.home .home-container .section-cta-background {
-      background-image: url(../img/felixmitch-img-6.webp);
+            color: #430708;
+            transition: box-shadow 0.3s ease; }
+            body.home .home-container .section-services .services-container_box:hover {
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+            body.home .home-container .section-services .services-container_box.active {
+              background-color: #eb230b;
+              color: #fff3ed; }
+              body.home .home-container .section-services .services-container_box.active a {
+                color: inherit; }
+                body.home .home-container .section-services .services-container_box.active a:hover {
+                  text-decoration: none; }
+              body.home .home-container .section-services .services-container_box.active .box-redirection {
+                background-color: #430708;
+                transition: background-color .3s ease; }
+                body.home .home-container .section-services .services-container_box.active .box-redirection:hover {
+                  background-color: #fa3d15; }
+              body.home .home-container .section-services .services-container_box.active .box-info_icon {
+                border: 1px dashed #fff;
+                color: #fff; }
+                body.home .home-container .section-services .services-container_box.active .box-info_icon:hover {
+                  background-color: #fff;
+                  color: #eb230b; }
+              body.home .home-container .section-services .services-container_box.active .heading-subtext {
+                color: #fff; }
+              body.home .home-container .section-services .services-container_box.active .heading-minitext {
+                color: #fff; }
+            body.home .home-container .section-services .services-container_box a {
+              color: inherit; }
+              body.home .home-container .section-services .services-container_box a:hover {
+                text-decoration: none; }
+            body.home .home-container .section-services .services-container_box .box-redirection {
+              position: absolute;
+              top: 0;
+              right: 0;
+              height: 5.5rem;
+              width: 5.5rem;
+              padding: 1rem;
+              background-color: #eb230b;
+              border-width: 0 0px .7rem .7rem;
+              border-style: solid;
+              border-color: #fff;
+              border-radius: 3px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: background-color .3s ease; }
+              body.home .home-container .section-services .services-container_box .box-redirection:hover {
+                background-color: #430708; }
+              body.home .home-container .section-services .services-container_box .box-redirection .redirection-icon {
+                font-size: 2.5rem;
+                rotate: 45deg;
+                color: #fff; }
+            body.home .home-container .section-services .services-container_box .box-info {
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem; }
+              body.home .home-container .section-services .services-container_box .box-info_icon {
+                height: 7rem;
+                width: 5.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                font-size: 3rem;
+                background-color: transparent;
+                border: 1px dashed #eb230b;
+                color: #eb230b;
+                border-radius: 3px; }
+                body.home .home-container .section-services .services-container_box .box-info_icon:hover {
+                  background-color: #eb230b;
+                  color: #fff; }
+            body.home .home-container .section-services .services-container_box .heading-subtext {
+              color: #000;
+              font-weight: 600;
+              display: block; }
+            body.home .home-container .section-services .services-container_box .heading-minitext {
+              color: #000; }
+    body.home .home-container .section-statistics {
+      padding: 0rem 3rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff; }
+      body.home .home-container .section-statistics .statistics {
+        padding: 5rem 3rem 8rem 3rem;
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        z-index: 1; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-statistics .statistics {
+            max-width: 120rem; } }
+        @media only screen and (max-width: 43.3em) {
+          body.home .home-container .section-statistics .statistics {
+            width: 100%; } }
+        @media only screen and (max-width: 35.6em) {
+          body.home .home-container .section-statistics .statistics {
+            padding-left: 0;
+            padding-right: 0; } }
+        body.home .home-container .section-statistics .statistics-top {
+          margin-bottom: 3.5rem; }
+          body.home .home-container .section-statistics .statistics-top .tag {
+            text-align: center; }
+            @media only screen and (max-width: 35.6em) {
+              body.home .home-container .section-statistics .statistics-top .tag {
+                text-align: left; } }
+          body.home .home-container .section-statistics .statistics-top .heading-midtext {
+            text-align: center;
+            margin-bottom: 1.5rem; }
+            @media only screen and (max-width: 35.6em) {
+              body.home .home-container .section-statistics .statistics-top .heading-midtext {
+                text-align: left; } }
+          body.home .home-container .section-statistics .statistics-top .heading-minitext {
+            margin-bottom: 1rem; }
+        body.home .home-container .section-statistics .statistics-bottom {
+          background-color: #e3eefb;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 3rem; }
+          @media only screen and (max-width: 30.5em) {
+            body.home .home-container .section-statistics .statistics-bottom {
+              flex-direction: column;
+              gap: 3rem;
+              align-items: center; } }
+          body.home .home-container .section-statistics .statistics-bottom .stats {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            justify-content: center; }
+            @media only screen and (max-width: 30.5em) {
+              body.home .home-container .section-statistics .statistics-bottom .stats {
+                padding: 1rem .2rem; } }
+            body.home .home-container .section-statistics .statistics-bottom .stats-icon {
+              font-size: 5rem;
+              color: #fa3d15; }
+            body.home .home-container .section-statistics .statistics-bottom .stats-text {
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center; }
+              body.home .home-container .section-statistics .statistics-bottom .stats-text_number {
+                font-size: 3rem;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: .2rem; }
+                body.home .home-container .section-statistics .statistics-bottom .stats-text_number span {
+                  font-size: 1.5rem; }
+              body.home .home-container .section-statistics .statistics-bottom .stats-text .heading-mini {
+                color: #fa3d15;
+                font-weight: 600; }
+    body.home .home-container .section-values {
+      padding: 8rem 3rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #430708;
+      color: #fff;
+      background-color: #010101; }
+      body.home .home-container .section-values .background-overlay {
+        background-image: url(../img/main-img-2.webp);
+        background-position: 50% 90%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        transition: background .3s;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+          body.home .home-container .section-values .background-overlay {
+            background-attachment: fixed; } }
+      body.home .home-container .section-values .values {
+        padding: 0 3rem;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        gap: 4%;
+        align-items: center; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-values .values {
+            width: 160rem; } }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-values .values {
+            padding: 0; } }
+        @media only screen and (max-width: 43.3em) {
+          body.home .home-container .section-values .values {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(2, max-content);
+            gap: 5rem; } }
+        body.home .home-container .section-values .values-left {
+          display: flex;
+          flex-direction: column; }
+          body.home .home-container .section-values .values-left .heading-midtext {
+            width: 70%; }
+          body.home .home-container .section-values .values-left .tag {
+            color: #fff3ed;
+            margin-bottom: 2rem; }
+        body.home .home-container .section-values .values-right {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem; }
+          body.home .home-container .section-values .values-right .statement {
+            display: flex;
+            gap: 2rem; }
+            body.home .home-container .section-values .values-right .statement-icon {
+              background-color: #fa3d15;
+              height: 1em;
+              width: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 1.5rem;
+              font-size: 1.5rem;
+              border-radius: 50px; }
+            body.home .home-container .section-values .values-right .statement-text_heading {
+              font-size: 2.2rem; }
+    body.home .home-container .section-featured-projects,
+    body.home .home-container .section-featured-equipments {
+      padding: 8rem 3rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      background-color: #fff; }
+      body.home .home-container .section-featured-projects .featured-projects,
+      body.home .home-container .section-featured-projects .featured-equipments,
+      body.home .home-container .section-featured-equipments .featured-projects,
+      body.home .home-container .section-featured-equipments .featured-equipments {
+        padding: 0 3rem;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        z-index: 1; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-featured-projects .featured-projects,
+          body.home .home-container .section-featured-projects .featured-equipments,
+          body.home .home-container .section-featured-equipments .featured-projects,
+          body.home .home-container .section-featured-equipments .featured-equipments {
+            width: 160rem; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-featured-projects .featured-projects,
+          body.home .home-container .section-featured-projects .featured-equipments,
+          body.home .home-container .section-featured-equipments .featured-projects,
+          body.home .home-container .section-featured-equipments .featured-equipments {
+            padding: 0; } }
+        body.home .home-container .section-featured-projects .featured-projects-text,
+        body.home .home-container .section-featured-projects .featured-equipments-text,
+        body.home .home-container .section-featured-equipments .featured-projects-text,
+        body.home .home-container .section-featured-equipments .featured-equipments-text {
+          color: #000;
+          display: grid;
+          grid-template-columns: 42% 55%;
+          align-items: center;
+          gap: 3%;
+          margin-bottom: 5rem; }
+          @media only screen and (max-width: 35.6em) {
+            body.home .home-container .section-featured-projects .featured-projects-text,
+            body.home .home-container .section-featured-projects .featured-equipments-text,
+            body.home .home-container .section-featured-equipments .featured-projects-text,
+            body.home .home-container .section-featured-equipments .featured-equipments-text {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(2, max-content);
+              gap: 2rem; } }
+          body.home .home-container .section-featured-projects .featured-projects-text .heading-minitext,
+          body.home .home-container .section-featured-projects .featured-equipments-text .heading-minitext,
+          body.home .home-container .section-featured-equipments .featured-projects-text .heading-minitext,
+          body.home .home-container .section-featured-equipments .featured-equipments-text .heading-minitext {
+            margin-bottom: 3rem; }
+          body.home .home-container .section-featured-projects .featured-projects-text .line,
+          body.home .home-container .section-featured-projects .featured-equipments-text .line,
+          body.home .home-container .section-featured-equipments .featured-projects-text .line,
+          body.home .home-container .section-featured-equipments .featured-equipments-text .line {
+            height: 3px;
+            width: 7rem;
+            background-color: #fa3d15;
+            content: '';
+            display: block;
+            margin-top: 1.3rem; }
+        body.home .home-container .section-featured-projects .featured-projects .swiper,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper {
+          width: 100%;
+          height: 30rem; }
+          @media only screen and (min-width: 100em) {
+            body.home .home-container .section-featured-projects .featured-projects .swiper,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper {
+              height: 40rem; } }
+          @media only screen and (max-width: 43.3em) {
+            body.home .home-container .section-featured-projects .featured-projects .swiper,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper {
+              height: 35rem; } }
+        body.home .home-container .section-featured-projects .featured-projects .swiper-slide,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-slide,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-slide,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide {
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #000;
+          cursor: grab; }
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide:active,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:active,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:active,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:active {
+            cursor: grabbing; }
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide,
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide_overlay,
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide_overlay,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide_overlay,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide_overlay,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide_overlay,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide_overlay,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide_overlay,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide_overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background-size: cover;
+              background-position: center;
+              transition: opacity 0.3s ease;
+              z-index: 1; }
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content,
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content,
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content,
+            body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content,
+            body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content,
+            body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content,
+            body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              color: #fff;
+              opacity: 0;
+              z-index: 2;
+              transition: opacity 0.3s ease; }
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper,
+              body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper {
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column; }
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .tag,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .tag {
+                  font-size: 1rem;
+                  margin-bottom: .7em;
+                  color: #fff; }
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a {
+                  text-decoration: none;
+                  color: #fff;
+                  cursor: pointer; }
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper a:hover,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper a:hover {
+                    cursor: pointer;
+                    color: #fc653c; }
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper .heading-subtext,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper .heading-subtext {
+                  font-size: 2.2rem;
+                  font-weight: 700; }
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link,
+                body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link {
+                  display: flex;
+                  padding-top: 1.2rem;
+                  border-top: 1px solid rgba(255, 255, 255, 0.6); }
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon,
+                  body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon {
+                    font-size: 1rem;
+                    rotate: 45deg;
+                    color: #fff; }
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-projects .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-projects .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .project-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .project-content .equipment-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .project-content-wrapper--link .redirection-icon:hover,
+                    body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide .equipment-slide .equipment-content .equipment-content-wrapper--link .redirection-icon:hover {
+                      color: #fc653c; }
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-slide_overlay,
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .equipment-slide_overlay,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .project-slide_overlay,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .equipment-slide_overlay,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .project-slide_overlay,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .equipment-slide_overlay,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .project-slide_overlay,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .equipment-slide_overlay {
+            object-fit: cover;
+            opacity: 0.3; }
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .project-content,
+          body.home .home-container .section-featured-projects .featured-projects .swiper-slide:hover .equipment-content,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .project-content,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-slide:hover .equipment-content,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .project-content,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-slide:hover .equipment-content,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .project-content,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-slide:hover .equipment-content {
+            opacity: 1; }
+        body.home .home-container .section-featured-projects .featured-projects .swiper-button-next,
+        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev {
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.6);
+          padding: 3rem; }
+          body.home .home-container .section-featured-projects .featured-projects .swiper-button-next::after,
+          body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev::after,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next::after,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev::after,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next::after,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev::after,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next::after,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev::after {
+            font-size: 3rem; }
+          body.home .home-container .section-featured-projects .featured-projects .swiper-button-next:hover,
+          body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev:hover,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next:hover,
+          body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev:hover,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next:hover,
+          body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev:hover,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next:hover,
+          body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.9); }
+        body.home .home-container .section-featured-projects .featured-projects .swiper-button-next,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-next,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-next,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-next {
+          right: 10px; }
+        body.home .home-container .section-featured-projects .featured-projects .swiper-button-prev,
+        body.home .home-container .section-featured-projects .featured-equipments .swiper-button-prev,
+        body.home .home-container .section-featured-equipments .featured-projects .swiper-button-prev,
+        body.home .home-container .section-featured-equipments .featured-equipments .swiper-button-prev {
+          left: 10px; }
+    body.home .home-container .section-testimonial {
+      padding: 8rem 3rem;
+      background-image: url(../img/testimonial-clients/testimonial-bg.webp);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    body.home .home-container .section-cta .cta-container {
-      width: 100%;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      gap: 2rem;
-      justify-content: center;
-      align-items: center; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-cta .cta-container {
-          width: 160rem; } }
-      @media only screen and (max-width: 50.3em) {
-        body.home .home-container .section-cta .cta-container {
-          padding: 0rem;
-          gap: 1rem; } }
-      @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-cta .cta-container {
-          grid-template-columns: 1fr;
-          grid-template-rows: repeat(2, min-content);
-          gap: 2rem; } }
-    body.home .home-container .section-cta__texts {
-      padding: 0 2rem;
-      z-index: 100;
+      height: max-content;
       color: #fff; }
       @media only screen and (max-width: 62.5em) {
-        body.home .home-container .section-cta__texts {
-          padding: 0 1rem;
-          padding-right: 0; } }
+        body.home .home-container .section-testimonial {
+          padding: 2rem 1.5rem; } }
       @media only screen and (max-width: 38.6em) {
-        body.home .home-container .section-cta__texts {
-          text-align: left;
-          padding: 3rem 0 1rem 0; } }
-      body.home .home-container .section-cta__texts .cta-heading {
-        font-size: 5.5rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        color: #fff; }
-      body.home .home-container .section-cta__texts .cta-subtext {
-        margin-bottom: 3rem; }
-    body.home .home-container .section-cta .cta-help {
-      width: 100%;
-      background-color: black; }
-      body.home .home-container .section-cta .cta-help_text {
-        display: flex;
+        body.home .home-container .section-testimonial {
+          padding: 2rem 1.5rem 5rem 1.5rem; } }
+      body.home .home-container .section-testimonial .testimonial-container {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 2rem;
+        justify-content: center;
+        align-items: center; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-testimonial .testimonial-container {
+            width: 160rem; } }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-testimonial .testimonial-container {
+            padding: 0rem;
+            gap: 1rem; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-testimonial .testimonial-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, min-content);
+            gap: 2rem; } }
+      body.home .home-container .section-testimonial__texts {
+        padding: 0 2rem; }
+        @media only screen and (max-width: 62.5em) {
+          body.home .home-container .section-testimonial__texts {
+            padding: 0 1rem;
+            padding-right: 0; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-testimonial__texts {
+            text-align: left;
+            padding: 3rem 0 1rem 0; } }
+        body.home .home-container .section-testimonial__texts .quote-image {
+          height: 8rem;
+          margin-bottom: 4rem; }
+        body.home .home-container .section-testimonial__texts .tag {
+          color: #fff;
+          margin-bottom: 3rem; }
+        body.home .home-container .section-testimonial__texts .testimonial-heading {
+          font-size: 3.7rem;
+          font-weight: 700;
+          margin-bottom: 2rem; }
+          @media only screen and (max-width: 62.5em) {
+            body.home .home-container .section-testimonial__texts .testimonial-heading {
+              font-size: 2.7rem; } }
+        body.home .home-container .section-testimonial__texts .testimonial-subtext {
+          font-size: 1.5rem;
+          font-weight: 400; }
+          @media only screen and (max-width: 35.6em) {
+            body.home .home-container .section-testimonial__texts .testimonial-subtext {
+              font-size: 1.7rem; } }
+      body.home .home-container .section-testimonial div.swiper-3 {
+        margin: 2.5rem auto;
+        width: 100%;
+        height: auto;
+        padding: 0 4rem 6rem 4rem;
+        position: relative;
+        padding-bottom: 4rem;
+        overflow: hidden; }
+        @media only screen and (max-width: 62.5em) {
+          body.home .home-container .section-testimonial div.swiper-3 {
+            padding: 0 2rem 6rem 2rem; } }
+        body.home .home-container .section-testimonial div.swiper-3 .testimonial-item {
+          text-align: center;
+          border: 0.1rem solid var(--grey);
+          border-radius: 0.5rem;
+          padding: 4rem 2rem;
+          height: auto;
+          width: 100%;
+          background-color: #fff;
+          position: relative;
+          overflow: hidden;
+          color: #000;
+          cursor: grab; }
+          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item:active {
+            cursor: grabbing; }
+          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .quote {
+            position: absolute;
+            top: -100px;
+            right: 0;
+            font-size: 30rem;
+            color: rgba(250, 61, 21, 0.09);
+            z-index: -100; }
+          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-comment {
+            color: var(--grey);
+            font-size: 1.3rem;
+            line-height: 1.5;
+            font-style: italic;
+            text-align: left; }
+          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 2.2rem; }
+            body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info .client-image {
+              height: 7rem;
+              width: 7rem;
+              border-radius: 50%;
+              border: 0.5rem solid var(--white); }
+            body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info_basic {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              gap: .2rem; }
+              body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info_basic .client-name {
+                font-size: 1.5rem; }
+              body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .client-info_basic .tag {
+                margin-bottom: 0;
+                font-size: 1.2rem; }
+          body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination {
+            bottom: 0; }
+            body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination .swiper-pagination-bullet {
+              background: #fc653c; }
+            body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination .swiper-pagination-bullet-active {
+              background: #eb230b; }
+    body.home .home-container .section-cta {
+      padding: 10rem 3rem;
+      background-color: #2a2f35;
+      background-repeat: no-repeat;
+      height: max-content;
+      position: relative; }
+      body.home .home-container .section-cta-background {
+        background-image: url(../img/felixmitch-img-6.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      body.home .home-container .section-cta .cta-container {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center; }
+        @media only screen and (min-width: 100em) {
+          body.home .home-container .section-cta .cta-container {
+            width: 160rem; } }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-cta .cta-container {
+            padding: 0rem;
+            gap: 1rem; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-cta .cta-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, min-content);
+            gap: 2rem; } }
+      body.home .home-container .section-cta__texts {
+        padding: 0 2rem;
         z-index: 100;
         color: #fff; }
-  body.home .home-container .section-footer {
-    padding: 3rem 3rem;
-    background-color: #ffe3d5;
-    background-image: url(../img/footer-bg.webp);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    height: max-content; }
-    @media only screen and (max-width: 62.5em) {
-      body.home .home-container .section-footer {
-        padding: 2rem 1.5rem; } }
-    @media only screen and (max-width: 38.6em) {
-      body.home .home-container .section-footer {
-        padding: 2rem 1.5rem; } }
-    body.home .home-container .section-footer .footer-container {
-      width: 100%;
-      padding: 0 2rem;
-      margin: 0 auto;
-      padding: 4rem 0; }
-      @media only screen and (min-width: 100em) {
-        body.home .home-container .section-footer .footer-container {
-          width: 160rem; } }
-      @media only screen and (max-width: 50.3em) {
-        body.home .home-container .section-footer .footer-container {
-          padding: 0rem; } }
-      body.home .home-container .section-footer .footer-container .contact-text {
+        @media only screen and (max-width: 62.5em) {
+          body.home .home-container .section-cta__texts {
+            padding: 0 1rem;
+            padding-right: 0; } }
+        @media only screen and (max-width: 38.6em) {
+          body.home .home-container .section-cta__texts {
+            text-align: left;
+            padding: 3rem 0 1rem 0; } }
+        body.home .home-container .section-cta__texts .cta-heading {
+          font-size: 5.5rem;
+          font-weight: 700;
+          margin-bottom: 2rem;
+          color: #fff; }
+        body.home .home-container .section-cta__texts .cta-subtext {
+          margin-bottom: 3rem; }
+      body.home .home-container .section-cta .cta-help {
         width: 100%;
-        padding: 4rem 2rem;
+        background-color: black; }
+        body.home .home-container .section-cta .cta-help_text {
+          display: flex;
+          z-index: 100;
+          color: #fff; }
+    body.home .home-container .section-footer {
+      padding: 3rem 3rem;
+      background-color: #ffe3d5;
+      background-image: url(../img/footer-bg.webp);
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      height: max-content; }
+      @media only screen and (max-width: 62.5em) {
+        body.home .home-container .section-footer {
+          padding: 2rem 1.5rem; } }
+      @media only screen and (max-width: 38.6em) {
+        body.home .home-container .section-footer {
+          padding: 2rem 1.5rem; } }
+      body.home .home-container .section-footer .footer-container {
+        width: 100%;
+        padding: 0 2rem;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+        padding: 4rem 0; }
         @media only screen and (min-width: 100em) {
-          body.home .home-container .section-footer .footer-container .contact-text {
+          body.home .home-container .section-footer .footer-container {
             width: 160rem; } }
-        @media only screen and (max-width: 35.6em) {
-          body.home .home-container .section-footer .footer-container .contact-text {
-            flex-direction: column;
-            align-items: start;
-            gap: 2rem; } }
-        body.home .home-container .section-footer .footer-container .contact-text_left {
-          margin-right: auto;
-          width: 45%; }
+        @media only screen and (max-width: 50.3em) {
+          body.home .home-container .section-footer .footer-container {
+            padding: 0rem; } }
+        body.home .home-container .section-footer .footer-container .contact-text {
+          width: 100%;
+          padding: 4rem 2rem;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+          @media only screen and (min-width: 100em) {
+            body.home .home-container .section-footer .footer-container .contact-text {
+              width: 160rem; } }
           @media only screen and (max-width: 35.6em) {
-            body.home .home-container .section-footer .footer-container .contact-text_left {
-              width: 100%; } }
-        body.home .home-container .section-footer .footer-container .contact-text .hero-btn-light {
-          display: flex;
-          gap: 1rem;
-          align-items: center; }
-    body.home .home-container .section-footer_bottom {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: min-content 1fr;
-      justify-content: center;
-      align-items: center;
-      row-gap: 4rem;
-      padding: 4rem 0; }
-      body.home .home-container .section-footer_bottom .footer-group {
+            body.home .home-container .section-footer .footer-container .contact-text {
+              flex-direction: column;
+              align-items: start;
+              gap: 2rem; } }
+          body.home .home-container .section-footer .footer-container .contact-text_left {
+            margin-right: auto;
+            width: 45%; }
+            @media only screen and (max-width: 35.6em) {
+              body.home .home-container .section-footer .footer-container .contact-text_left {
+                width: 100%; } }
+          body.home .home-container .section-footer .footer-container .contact-text .hero-btn-light {
+            display: flex;
+            gap: 1rem;
+            align-items: center; }
+      body.home .home-container .section-footer_bottom {
         display: grid;
-        grid-template-columns: 40% 29% 29%;
-        gap: 1.5rem;
-        justify-content: space-between; }
-        @media only screen and (max-width: 35.6em) {
-          body.home .home-container .section-footer_bottom .footer-group {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            gap: 4rem; } }
-      body.home .home-container .section-footer_bottom .footer-logo_container {
-        margin: 0 auto; }
-        body.home .home-container .section-footer_bottom .footer-logo_container .footer-logo {
-          height: 2.5rem; }
-      body.home .home-container .section-footer_bottom .footer-bottom-section {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 80%; }
-        @media only screen and (max-width: 35.6em) {
-          body.home .home-container .section-footer_bottom .footer-bottom-section {
-            text-align: center; } }
-        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-subHeader {
-          font-size: 1.6rem;
-          font-weight: 600;
-          text-transform: uppercase;
-          margin-bottom: 2rem; }
-          @media only screen and (max-width: 30.5em) {
-            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-subHeader {
-              margin-bottom: 1rem; } }
-        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links,
-        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem; }
-          @media only screen and (max-width: 30.5em) {
-            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links,
-            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links {
-              justify-content: center; } }
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links:not(:last-child),
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links:not(:last-child) {
-            margin-bottom: 1.2rem; }
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-icon,
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-icon {
-            font-size: 1.4rem; }
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-item,
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-item {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            color: #fff;
-            cursor: pointer;
-            transition: all 0.1s ease; }
-            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-item:hover,
-            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-item:hover {
-              transform: translateX(5px); }
-        body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr;
+        justify-content: center;
+        align-items: center;
+        row-gap: 4rem;
+        padding: 4rem 0; }
+        body.home .home-container .section-footer_bottom .footer-group {
           display: grid;
-          font-size: 2rem;
-          grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
-          gap: .5rem;
-          justify-content: center;
-          align-items: center;
-          height: max-content; }
-          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon {
-            transition: all .3s ease; }
-            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon:hover {
-              transform: scale(1.1);
-              cursor: pointer; }
-    body.home .home-container .section-footer_copyright {
-      padding: 2rem 0; }
-      body.home .home-container .section-footer_copyright a {
-        color: #fff;
-        text-decoration: underline; }
-        body.home .home-container .section-footer_copyright a:hover {
-          color: #BFA2DB; }
+          grid-template-columns: 40% 29% 29%;
+          gap: 1.5rem;
+          justify-content: space-between; }
+          @media only screen and (max-width: 35.6em) {
+            body.home .home-container .section-footer_bottom .footer-group {
+              grid-template-columns: 1fr;
+              grid-template-rows: auto;
+              gap: 4rem; } }
+        body.home .home-container .section-footer_bottom .footer-logo_container {
+          margin: 0 auto; }
+          body.home .home-container .section-footer_bottom .footer-logo_container .footer-logo {
+            height: 2.5rem; }
+        body.home .home-container .section-footer_bottom .footer-bottom-section {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          width: 80%; }
+          @media only screen and (max-width: 35.6em) {
+            body.home .home-container .section-footer_bottom .footer-bottom-section {
+              text-align: center; } }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-subHeader {
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 2rem; }
+            @media only screen and (max-width: 30.5em) {
+              body.home .home-container .section-footer_bottom .footer-bottom-section .footer-subHeader {
+                margin-bottom: 1rem; } }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links,
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem; }
+            @media only screen and (max-width: 30.5em) {
+              body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links,
+              body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links {
+                justify-content: center; } }
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links:not(:last-child),
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links:not(:last-child) {
+              margin-bottom: 1.2rem; }
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-icon,
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-icon {
+              font-size: 1.4rem; }
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-item,
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-item {
+              font-size: 1.2rem;
+              text-transform: uppercase;
+              color: #fff;
+              cursor: pointer;
+              transition: all 0.1s ease; }
+              body.home .home-container .section-footer_bottom .footer-bottom-section .footer-icon_links .link-item:hover,
+              body.home .home-container .section-footer_bottom .footer-bottom-section .footer-links .link-item:hover {
+                transform: translateX(5px); }
+          body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials {
+            display: grid;
+            font-size: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
+            gap: .5rem;
+            justify-content: center;
+            align-items: center;
+            height: max-content; }
+            body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon {
+              transition: all .3s ease; }
+              body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon:hover {
+                transform: scale(1.1);
+                cursor: pointer; }
+      body.home .home-container .section-footer_copyright {
+        padding: 2rem 0; }
+        body.home .home-container .section-footer_copyright a {
+          color: #fff;
+          text-decoration: underline; }
+          body.home .home-container .section-footer_copyright a:hover {
+            color: #BFA2DB; }
 
 .modal {
   color: #7d1311;
