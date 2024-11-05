@@ -193,6 +193,14 @@ body.home {
                width: 75%;
             }
 
+            @media only screen and (max-width:768px) {
+               width: 100%;
+            }
+
+            @media only screen and (max-width:$bp-medium) {
+               padding: 0;
+            }
+
             .tag {
                color: $color-grey-light-1;
             }

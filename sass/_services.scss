@@ -6,7 +6,8 @@ body.home {
 
 
       .services-page-hero,
-      .about-page-hero {
+      .about-page-hero,
+      .contact-hero {
          padding: 10rem 3rem;
          background-color: #2a2f35;
          background-repeat: no-repeat;
@@ -89,7 +90,6 @@ body.home {
             bottom: 0;
             left: 0;
             height: 4rem;
-            color: red;
             background-color: $color-secondary-50;
             width: 100%;
             z-index: 100;
@@ -171,7 +171,6 @@ body.home {
          }
       }
 
-
       .services-page-stats,
       .about-page-stats {
          background-color: $color-secondary-50;
@@ -192,6 +191,7 @@ body.home {
             padding: 6rem 1.5rem;
          }
 
+         // Service background image was removed under this &_container nexting so that the css can be effective.
 
          &_container {
             position: relative;
@@ -210,14 +210,13 @@ body.home {
                width: 160rem;
             }
 
-
-            @media only screen and (max-width:$bp-medium) {
+            @media only screen and (max-width:$bp-large-extra) {
                grid-template-columns: 100%;
                grid-template-rows: auto;
                gap: 3rem;
                padding: 0;
 
-               s .container-left {
+               .container-left {
                   order: 1
                }
 
@@ -265,6 +264,10 @@ body.home {
                      display: grid;
                      grid-template-columns: repeat(2, minmax(12rem, 1fr));
                      gap: 1.5rem;
+
+                     @media only screen and (max-width:$bp-large-extra) {
+                        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                     }
                   }
 
                   .feature-card {
@@ -317,6 +320,14 @@ body.home {
 
             }
 
+         }
+
+         @media only screen and (max-width:$bp-large-extra) {
+            background-image: none;
+
+            .container-left {
+               display: none;
+            }
          }
       }
 

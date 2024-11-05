@@ -67,14 +67,14 @@ var swiper = new Swiper('.mySwiper-2', {
     },
 
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
-    //  768: {
-    //    slidesPerView: 2,
-    //  },
-    //  1024: {
-    //    slidesPerView: 3,
-    //  },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
   autoplay: {
     delay: 2000,
