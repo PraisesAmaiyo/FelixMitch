@@ -382,9 +382,15 @@ body.home {
             font-weight: 600;
             width: 40%;
             margin-bottom: 1.5rem;
+
+            @media only screen and (max-width:$bp-big) {
+               width: 100%;
+            }
+
          }
 
          .double-column {
+
             // Set the columns
             column-count: 2;
             column-gap: 2rem;
