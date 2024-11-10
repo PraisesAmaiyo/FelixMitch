@@ -1,14 +1,14 @@
-var swiper = new Swiper('.swiper-3', {
-  slidesPerView: 'auto',
-  spaceBetween: 15,
-  freeMode: true,
-  centeredSlides: true,
-  //   loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+// var swiper = new Swiper('.swiper-3', {
+//   slidesPerView: 'auto',
+//   spaceBetween: 15,
+//   freeMode: true,
+//   centeredSlides: true,
+//   //   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
 
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 3,
@@ -88,11 +88,11 @@ var swiper = new Swiper('.swiper-3', {
   spaceBetween: 15,
   freeMode: true,
   centeredSlides: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  speed: 3000,
+  //   autoplay: {
+  //     delay: 2000,
+  //     disableOnInteraction: false,
+  //   },
+  //   speed: 3000,
   loop: true,
   pagination: {
     el: '.swiper-pagination',

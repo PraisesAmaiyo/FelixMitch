@@ -1543,11 +1543,12 @@ body.home {
                 margin-bottom: 0;
                 font-size: 1.2rem; }
           body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination {
-            bottom: 0; }
+            bottom: 0;
+            background-color: greenyellow !important; }
             body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination .swiper-pagination-bullet {
-              background: #fc653c; }
+              background-color: #fc653c; }
             body.home .home-container .section-testimonial div.swiper-3 .testimonial-item .swiper-pagination .swiper-pagination-bullet-active {
-              background: #eb230b; }
+              background-color: #eb230b; }
     body.home .home-container .section-cta {
       padding: 10rem 3rem;
       background-color: #2a2f35;
@@ -1745,6 +1746,15 @@ body.home {
           text-decoration: underline; }
           body.home .home-container .section-footer_copyright a:hover {
             color: #BFA2DB; }
+
+.swiper-pagination {
+  bottom: 0;
+  padding: .5rem; }
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: #fc653c !important;
+    padding: .5rem; }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #eb230b; }
 
 .modal {
   color: #7d1311;
@@ -2033,11 +2043,13 @@ body.home {
       left: 0;
       opacity: 0.3; }
     body.home .home-container .single-project-hero .calibration {
-      background-image: url(../img/projects/calibration-project.webp); }
+      background-image: url(../img/projects/calibration-project.webp);
+      background-position: 100% 25%; }
     body.home .home-container .single-project-hero .remediation {
       background-image: url(../img/projects/remediation-project.webp); }
     body.home .home-container .single-project-hero .manpower-supply {
-      background-image: url(../img/projects/manpower-supply-project.webp); }
+      background-image: url(../img/projects/manpower-supply-project.webp);
+      background-position: 50% 40%; }
     body.home .home-container .single-project-hero .procurement {
       background-image: url(../img/projects/procurement-project.webp); }
     body.home .home-container .single-project-hero_container {
@@ -3271,7 +3283,8 @@ select {
       gap: 5rem;
       align-items: center; } }
   .navigation-header .logo {
-    height: 3.5rem; }
+    height: 3.5rem;
+    width: auto; }
   .navigation-header .mobile-nav-logo {
     display: none; }
     @media only screen and (max-width: 50.3em) {
@@ -3298,7 +3311,7 @@ select {
       .navigation-header .main-nav-top_contact {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
         font-size: 1.5rem;
         border-right: 0.5px solid #fff3ed;
         font-size: 1.4rem; }
@@ -3306,9 +3319,10 @@ select {
           display: flex;
           align-items: center;
           gap: 1rem;
-          margin-right: 1.5rem;
           font-weight: 600;
           color: #fff3ed; }
+          .navigation-header .main-nav-top_contact--links:last-child {
+            margin-right: 1.5rem; }
           .navigation-header .main-nav-top_contact--links:hover .nav-icon,
           .navigation-header .main-nav-top_contact--links:hover .link-item {
             color: #fc653c;
@@ -3324,13 +3338,14 @@ select {
       .navigation-header .main-nav-top_socials {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: .3rem;
         font-size: 1.6rem;
         color: #fff3ed;
         margin-left: 1.5rem; }
         .navigation-header .main-nav-top_socials .nav-icon {
           font-size: 1.6rem;
-          color: #fff3ed; }
+          color: #fff3ed;
+          padding: 1rem; }
           .navigation-header .main-nav-top_socials .nav-icon:hover {
             color: #fc653c; }
     .navigation-header .main-nav-bottom {

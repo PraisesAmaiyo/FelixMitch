@@ -1082,14 +1082,15 @@ body.home {
 
                .swiper-pagination {
                   bottom: 0;
+                  background-color: greenyellow !important;
 
                   .swiper-pagination-bullet {
-                     background: $color-primary-400;
-                     ;
+                     background-color: $color-primary-400;
+
                   }
 
                   .swiper-pagination-bullet-active {
-                     background: $color-primary-600;
+                     background-color: $color-primary-600;
                   }
 
 
@@ -1386,6 +1387,23 @@ body.home {
 
       }
    }
+}
+
+.swiper-pagination {
+   bottom: 0;
+   padding: .5rem;
+
+   .swiper-pagination-bullet {
+      background-color: $color-primary-400 !important;
+      padding: .5rem;
+
+   }
+
+   .swiper-pagination-bullet-active {
+      background-color: $color-primary-600;
+   }
+
+
 }
 
 .modal {

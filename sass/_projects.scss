@@ -242,6 +242,7 @@ body.home {
 
          .calibration {
             background-image: url(../img/projects/calibration-project.webp);
+            background-position: 100% 25%;
          }
 
          .remediation {
@@ -250,6 +251,7 @@ body.home {
 
          .manpower-supply {
             background-image: url(../img/projects/manpower-supply-project.webp);
+            background-position: 50% 40%;
          }
 
          .procurement {
@@ -264,7 +266,6 @@ body.home {
             margin: 0 auto;
             z-index: 100;
             text-align: center;
-
 
             @media only screen and (min-width: $bp-monitor) {
                width: 160rem;
