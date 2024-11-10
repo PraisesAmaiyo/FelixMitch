@@ -2023,7 +2023,6 @@ body.home {
     height: max-content;
     position: relative; }
     body.home .home-container .single-project-hero .single-project-background {
-      background-image: url(../img/projects/pipeline/pipeline-bg.jpeg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -2033,6 +2032,14 @@ body.home {
       top: 0;
       left: 0;
       opacity: 0.3; }
+    body.home .home-container .single-project-hero .calibration {
+      background-image: url(../img/projects/calibration-project.webp); }
+    body.home .home-container .single-project-hero .remediation {
+      background-image: url(../img/projects/remediation-project.webp); }
+    body.home .home-container .single-project-hero .manpower-supply {
+      background-image: url(../img/projects/manpower-supply-project.webp); }
+    body.home .home-container .single-project-hero .procurement {
+      background-image: url(../img/projects/procurement-project.webp); }
     body.home .home-container .single-project-hero_container {
       width: 100%;
       height: 100%;

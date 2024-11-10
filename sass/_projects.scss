@@ -229,7 +229,6 @@ body.home {
          position: relative;
 
          .single-project-background {
-            background-image: url(../img/projects/pipeline/pipeline-bg.jpeg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -239,6 +238,22 @@ body.home {
             top: 0;
             left: 0;
             opacity: 0.3;
+         }
+
+         .calibration {
+            background-image: url(../img/projects/calibration-project.webp);
+         }
+
+         .remediation {
+            background-image: url(../img/projects/remediation-project.webp);
+         }
+
+         .manpower-supply {
+            background-image: url(../img/projects/manpower-supply-project.webp);
+         }
+
+         .procurement {
+            background-image: url(../img/projects/procurement-project.webp);
          }
 
          &_container {
