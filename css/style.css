@@ -338,8 +338,7 @@ body.home {
       margin: 1.5rem 0 1rem 0; }
     body.home .home-container .contact-info_right {
       display: flex;
-      flex-direction: column;
-      gap: 1rem; }
+      flex-direction: column; }
     body.home .home-container .contact-info_left, body.home .home-container .contact-info_right {
       width: 50%; }
       @media only screen and (max-width: 290px) {
