@@ -2126,7 +2126,6 @@ body.home {
     body.home .home-container .overview-section.project .heading-minitext,
     body.home .home-container .visual-section.project .heading-minitext,
     body.home .home-container .benefits-section.project .heading-minitext {
-      font-size: 1.3rem;
       margin-left: 0;
       margin-right: 0;
       margin-top: 1.5rem; }
@@ -2957,7 +2956,6 @@ body.home {
     body.home .home-container .equipment-overview .heading-midtext {
       margin-bottom: 2rem; }
     body.home .home-container .equipment-overview .heading-minitext {
-      font-size: 1.3rem;
       margin-left: 0;
       margin-right: 0;
       margin-top: 1.5rem; }
