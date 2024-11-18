@@ -1354,7 +1354,7 @@ body.home {
                .footer-socials {
                   display: grid;
                   font-size: 2rem;
-                  grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
+                  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
                   gap: .5rem;
                   justify-content: center;
                   align-items: center;
@@ -1362,6 +1362,8 @@ body.home {
 
                   .social-icon {
                      transition: all .3s ease;
+                     color: inherit;
+                     padding: 0 auto;
 
                      &:hover {
                         transform: scale(1.1);

@@ -445,7 +445,8 @@ body.home {
         font-size: 2.5rem;
         color: #eb230b; }
         body.home .home-container .contact-socials_container .contact-socials_bottom .social-icon {
-          transition: all .3s ease; }
+          transition: all .3s ease;
+          color: inherit; }
           body.home .home-container .contact-socials_container .contact-socials_bottom .social-icon:hover {
             transform: scale(1.1);
             color: #2A2F35;
@@ -1728,13 +1729,15 @@ body.home {
           body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials {
             display: grid;
             font-size: 2rem;
-            grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
             gap: .5rem;
             justify-content: center;
             align-items: center;
             height: max-content; }
             body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon {
-              transition: all .3s ease; }
+              transition: all .3s ease;
+              color: inherit;
+              padding: 0 auto; }
               body.home .home-container .section-footer_bottom .footer-bottom-section .footer-socials .social-icon:hover {
                 transform: scale(1.1);
                 cursor: pointer; }
